@@ -1,20 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, X, Phone, MessageCircle, ChevronRight, ShieldCheck, Milk } from "lucide-react";
+import { Menu, X, Phone, MessageCircle, ChevronRight, Milk } from "lucide-react";
 import { companyConfig } from "../data/company";
 import { getWhatsAppLink, getPhoneLink } from "../utils/whatsapp";
 
-export default function Navbar({ onOpenQuoteModal }) {
+export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
 
-  // Close mobile drawer on route change
-  useEffect(() => {
-    setMobileMenuOpen(false);
-  }, [location.pathname]);
-
-  // Track window scroll for shadow effect
+  // Scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -22,6 +17,8 @@ export default function Navbar({ onOpenQuoteModal }) {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const closeMenu = () => setMobileMenuOpen(false);
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -37,7 +34,7 @@ export default function Navbar({ onOpenQuoteModal }) {
       <header className={`navbar ${isScrolled ? "scrolled" : ""}`}>
         <div className="container navbar-inner">
           {/* Brand Logo */}
-          <Link to="/" className="brand-logo" aria-label="Jagdamb Enterprises Home">
+          <Link to="/" className="brand-logo" aria-label="Jagdamb Enterprises Home" onClick={closeMenu}>
             <div className="brand-badge">
               <Milk size={26} strokeWidth={2.2} />
             </div>
@@ -85,7 +82,7 @@ export default function Navbar({ onOpenQuoteModal }) {
       {/* Mobile Menu Drawer Overlay */}
       <div 
         className={`mobile-drawer-overlay ${mobileMenuOpen ? "open" : ""}`}
-        onClick={() => setMobileMenuOpen(false)}
+        onClick={closeMenu}
         aria-hidden="true"
       />
 
@@ -103,7 +100,7 @@ export default function Navbar({ onOpenQuoteModal }) {
           </div>
           <button
             type="button"
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={closeMenu}
             aria-label="Close menu"
             style={{ padding: "0.5rem", color: "var(--text-muted)" }}
           >
@@ -117,7 +114,8 @@ export default function Navbar({ onOpenQuoteModal }) {
             <li key={item.path}>
               <NavLink
                 to={item.path}
-                className={({ isActive }) => `drawer-nav-link ${isActive ? "active" : ""}`}
+                onClick={closeMenu}
+                className={({ isActive }) => `drawer-nav-link ${isActive || location.pathname === item.path ? "active" : ""}`}
               >
                 <span>{item.name}</span>
                 <ChevronRight size={18} opacity={0.6} />
@@ -128,7 +126,7 @@ export default function Navbar({ onOpenQuoteModal }) {
 
         {/* Drawer Footer Actions */}
         <div className="drawer-footer">
-          <Link to="/enquiry" className="btn btn-primary" style={{ width: "100%" }}>
+          <Link to="/enquiry" onClick={closeMenu} className="btn btn-primary" style={{ width: "100%" }}>
             Request Quotation
           </Link>
           <a
