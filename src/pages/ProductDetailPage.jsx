@@ -145,12 +145,20 @@ export default function ProductDetailPage() {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-primary btn-lg"
-                    style={{ flex: 1, minWidth: "200px" }}
+                    className="btn btn-whatsapp btn-lg"
+                    style={{ flex: 1, minWidth: "180px" }}
                   >
                     <MessageCircle size={20} />
                     <span>WhatsApp Enquiry</span>
                   </a>
+
+                  <Link
+                    to="/enquiry"
+                    className="btn btn-primary btn-lg"
+                    style={{ flex: 1, minWidth: "180px" }}
+                  >
+                    <span>Request Quote</span>
+                  </Link>
 
                   <a
                     href={getPhoneLink(companyConfig.primaryPhone)}
