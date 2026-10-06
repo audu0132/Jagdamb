@@ -2,7 +2,6 @@ import React from "react";
 import { 
   MapPin, 
   Phone, 
-  Mail, 
   MessageCircle, 
   Clock, 
   Navigation, 
