@@ -9,8 +9,7 @@ import {
   CheckCircle2, 
   Phone, 
   MessageCircle, 
-  Clock, 
-  ArrowRight 
+  Clock
 } from "lucide-react";
 import { services } from "../data/services";
 import { companyConfig } from "../data/company";
