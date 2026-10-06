@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
-import { Menu, X, Phone, MessageCircle, ChevronRight, Milk } from "lucide-react";
+import { Menu, X, Phone, MessageCircle, ChevronRight } from "lucide-react";
 import { companyConfig } from "../data/company";
 import { getWhatsAppLink, getPhoneLink } from "../utils/whatsapp";
+import logoImg from "../assets/image.png";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,9 +36,7 @@ export default function Navbar() {
         <div className="container navbar-inner">
           {/* Brand Logo */}
           <Link to="/" className="brand-logo" aria-label="Jagdamb Enterprises Home" onClick={closeMenu}>
-            <div className="brand-badge">
-              <Milk size={26} strokeWidth={2.2} />
-            </div>
+            <img src={logoImg} alt={companyConfig.name} className="brand-logo-img" />
             <div className="brand-info">
               <span className="brand-title">{companyConfig.name}</span>
               <span className="brand-subtitle">Dairy Equipment • Baramati</span>
