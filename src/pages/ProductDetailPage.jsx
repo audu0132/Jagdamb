@@ -3,14 +3,10 @@ import { useParams, Link, Navigate } from "react-router-dom";
 import { 
   MessageCircle, 
   Phone, 
-  ArrowLeft, 
   CheckCircle2, 
   ShieldCheck, 
-  FileText, 
-  MapPin, 
   Truck, 
-  Clock,
-  Sparkles
+  Clock
 } from "lucide-react";
 import { products } from "../data/products";
 import { companyConfig } from "../data/company";
