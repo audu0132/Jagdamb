@@ -18,68 +18,68 @@ import {
 export default function ProductImage({ src, alt, category, className = "", height = "220px" }) {
   const [hasError, setHasError] = useState(false);
 
-  // Fallback themes based on equipment category (Red, Black & White Brand Identity)
+  // Fallback themes based on equipment category (Sky Blue + White Brand Identity)
   const categoryThemes = {
     "milking-machines": {
       icon: Milk,
-      bg: "linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%)",
-      accent: "#FE0000",
+      bg: "linear-gradient(135deg, #F8FAFC 0%, #F0F9FF 100%)",
+      accent: "#0284C7",
       pattern: "Milking Technology • SS 304 Grade"
     },
     "milk-analysers-testing": {
       icon: Activity,
-      bg: "linear-gradient(135deg, #000000 0%, #171717 100%)",
-      accent: "#FE0000",
+      bg: "linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)",
+      accent: "#0284C7",
       pattern: "Ultrasonic Testing • Precision Sensor"
     },
     "cream-separators": {
       icon: Filter,
-      bg: "linear-gradient(135deg, #0D0D0D 0%, #202020 100%)",
-      accent: "#FE0000",
+      bg: "linear-gradient(135deg, #F8FAFC 0%, #F0F9FF 100%)",
+      accent: "#0284C7",
       pattern: "Centrifugal Separation • High RPM"
     },
     "bulk-milk-coolers": {
       icon: Snowflake,
-      bg: "linear-gradient(135deg, #0A0A0A 0%, #1C1C1C 100%)",
-      accent: "#FE0000",
+      bg: "linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)",
+      accent: "#0284C7",
       pattern: "Direct Expansion • 4°C Rapid Chilling"
     },
     "milk-cans-storage": {
       icon: Layers,
-      bg: "linear-gradient(135deg, #111111 0%, #222222 100%)",
-      accent: "#FE0000",
+      bg: "linear-gradient(135deg, #F8FAFC 0%, #F0F9FF 100%)",
+      accent: "#0284C7",
       pattern: "AISI 304 Stainless • Seamless Spun"
     },
     "dairy-processing": {
       icon: Cog,
-      bg: "linear-gradient(135deg, #000000 0%, #1A1A1A 100%)",
-      accent: "#FE0000",
+      bg: "linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)",
+      accent: "#0284C7",
       pattern: "Food Grade • Commercial Dairy Processing"
     },
     "chaff-cutters": {
       icon: Scissors,
-      bg: "linear-gradient(135deg, #0A0A0A 0%, #181818 100%)",
-      accent: "#FE0000",
+      bg: "linear-gradient(135deg, #F8FAFC 0%, #F0F9FF 100%)",
+      accent: "#0284C7",
       pattern: "High Output • Hardened Alloy Blades"
     },
     "spare-parts-accessories": {
       icon: Wrench,
-      bg: "linear-gradient(135deg, #000000 0%, #242424 100%)",
-      accent: "#FE0000",
+      bg: "linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)",
+      accent: "#0284C7",
       pattern: "Genuine Spares • Original Specs"
     },
     "dairy-equipment": {
       icon: Milk,
-      bg: "linear-gradient(135deg, #0D0D0D 0%, #1E1E1E 100%)",
-      accent: "#FE0000",
+      bg: "linear-gradient(135deg, #F8FAFC 0%, #F0F9FF 100%)",
+      accent: "#0284C7",
       pattern: "Dairy Equipment • Shed Machinery"
     }
   };
 
   const theme = categoryThemes[category] || {
     icon: ShieldCheck,
-    bg: "linear-gradient(135deg, #0A0A0A 0%, #171717 100%)",
-    accent: "#FE0000",
+    bg: "linear-gradient(135deg, #F8FAFC 0%, #F0F9FF 100%)",
+    accent: "#0284C7",
     pattern: "Jagdamb Dairy Equipment"
   };
 
@@ -99,8 +99,9 @@ export default function ProductImage({ src, alt, category, className = "", heigh
           justifyContent: "center",
           position: "relative",
           overflow: "hidden",
-          color: "#ffffff",
-          padding: "1.5rem"
+          color: "var(--text-dark)",
+          padding: "1.5rem",
+          borderBottom: "1px solid var(--light-border)"
         }}
       >
         {/* Subtle grid pattern background */}
@@ -108,7 +109,7 @@ export default function ProductImage({ src, alt, category, className = "", heigh
           style={{
             position: "absolute",
             inset: 0,
-            backgroundImage: "radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px)",
+            backgroundImage: "radial-gradient(rgba(56, 189, 248, 0.15) 1px, transparent 1px)",
             backgroundSize: "16px 16px",
             opacity: 0.6
           }} 
@@ -119,7 +120,7 @@ export default function ProductImage({ src, alt, category, className = "", heigh
             width: "64px",
             height: "64px",
             borderRadius: "50%",
-            background: "rgba(255, 255, 255, 0.12)",
+            background: "#FFFFFF",
             border: `2px solid ${theme.accent}`,
             display: "flex",
             alignItems: "center",
@@ -127,7 +128,7 @@ export default function ProductImage({ src, alt, category, className = "", heigh
             marginBottom: "0.85rem",
             position: "relative",
             zIndex: 1,
-            boxShadow: "0 8px 16px rgba(0,0,0,0.2)"
+            boxShadow: "0 6px 16px rgba(56, 189, 248, 0.18)"
           }}
         >
           <IconComponent size={32} color={theme.accent} />
@@ -139,7 +140,7 @@ export default function ProductImage({ src, alt, category, className = "", heigh
             textTransform: "uppercase", 
             letterSpacing: "1px",
             color: theme.accent,
-            fontWeight: 600,
+            fontWeight: 700,
             position: "relative",
             zIndex: 1,
             textAlign: "center"
@@ -151,8 +152,8 @@ export default function ProductImage({ src, alt, category, className = "", heigh
         <span 
           style={{ 
             fontSize: "0.95rem", 
-            color: "#ffffff",
-            fontWeight: 600,
+            color: "var(--text-dark)",
+            fontWeight: 700,
             marginTop: "0.35rem",
             position: "relative",
             zIndex: 1,
@@ -169,7 +170,7 @@ export default function ProductImage({ src, alt, category, className = "", heigh
             bottom: "0.5rem",
             right: "0.75rem",
             fontSize: "0.65rem",
-            color: "rgba(255, 255, 255, 0.5)",
+            color: "var(--text-muted)",
             zIndex: 1
           }}
         >

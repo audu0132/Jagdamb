@@ -59,12 +59,12 @@ export default function HomePage() {
 
               <div className="hero-ctas">
                 <Link to="/products" className="btn btn-primary btn-lg">
-                  <span>Explore Equipment</span>
+                  <span>Explore Products</span>
                   <ArrowRight size={18} />
                 </Link>
 
-                <Link to="/enquiry" className="btn btn-outline-white btn-lg">
-                  Get a Quick Quote
+                <Link to="/contact" className="btn btn-secondary btn-lg">
+                  <span>Contact Us</span>
                 </Link>
 
                 <a
@@ -81,15 +81,15 @@ export default function HomePage() {
               {/* Factual Highlights */}
               <div className="hero-badge-bar">
                 <div className="hero-badge-item">
-                  <ShieldCheck size={18} color="var(--brand-red)" />
+                  <ShieldCheck size={18} color="var(--deep-blue)" />
                   <span>Food-Grade SS 304 Quality</span>
                 </div>
                 <div className="hero-badge-item">
-                  <Wrench size={18} color="var(--brand-red)" />
+                  <Wrench size={18} color="var(--deep-blue)" />
                   <span>Prompt Local Service & Spares</span>
                 </div>
                 <div className="hero-badge-item">
-                  <MapPin size={18} color="var(--brand-red)" />
+                  <MapPin size={18} color="var(--deep-blue)" />
                   <span>Based in Baramati, Maharashtra</span>
                 </div>
               </div>
@@ -99,42 +99,42 @@ export default function HomePage() {
             <div>
               <div className="hero-card">
                 <div className="hero-card-header">
-                  <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "rgba(254, 0, 0, 0.15)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Activity size={20} color="var(--brand-red)" />
+                  <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "var(--light-blue)", border: "1px solid var(--light-border)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <Activity size={20} color="var(--deep-blue)" />
                   </div>
                   <div>
                     <h2 className="hero-card-title">Dairy Shed Solutions</h2>
-                    <span style={{ fontSize: "0.8rem", color: "#CBD5E1" }}>Built for Indian cattle breeds</span>
+                    <span style={{ fontSize: "0.8rem", color: "var(--text-muted)" }}>Built for Indian cattle breeds</span>
                   </div>
                 </div>
 
                 <ul className="hero-card-list">
                   <li className="hero-card-item">
-                    <CheckCircle2 size={18} />
+                    <CheckCircle2 size={18} color="var(--deep-blue)" />
                     <span><strong>Portable Milking Machines:</strong> Single & double bucket trolleys engineered for cow and buffalo teats.</span>
                   </li>
                   <li className="hero-card-item">
-                    <CheckCircle2 size={18} />
+                    <CheckCircle2 size={18} color="var(--deep-blue)" />
                     <span><strong>Ultrasonic Milk Testing:</strong> Chemical-free Fat & SNF analysis in 30 seconds for collection centers.</span>
                   </li>
                   <li className="hero-card-item">
-                    <CheckCircle2 size={18} />
+                    <CheckCircle2 size={18} color="var(--deep-blue)" />
                     <span><strong>Direct Expansion BMC Chillers:</strong> Preserve milk quality at 4°C with heavy PUF insulation.</span>
                   </li>
                   <li className="hero-card-item">
-                    <CheckCircle2 size={18} />
+                    <CheckCircle2 size={18} color="var(--deep-blue)" />
                     <span><strong>Ready Spares Inventory:</strong> Pulsators, silicone liners, claws, vacuum oils, and daily wash detergents.</span>
                   </li>
                 </ul>
 
-                <div style={{ background: "rgba(255, 255, 255, 0.08)", padding: "1rem", borderRadius: "var(--radius-md)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <div style={{ background: "var(--light-blue)", border: "1px solid var(--light-border)", padding: "1rem", borderRadius: "var(--radius-md)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <div>
-                    <div style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--brand-red)", fontWeight: 700 }}>Direct Contact</div>
-                    <div style={{ fontSize: "1rem", fontWeight: 700, color: "#FFFFFF" }}>{companyConfig.primaryPhone}</div>
+                    <div style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--deep-blue)", fontWeight: 700 }}>Direct Contact</div>
+                    <div style={{ fontSize: "1rem", fontWeight: 700, color: "var(--dark-blue)" }}>{companyConfig.primaryPhone}</div>
                   </div>
                   <a
                     href={getPhoneLink(companyConfig.primaryPhone)}
-                    className="btn btn-sm btn-outline-white"
+                    className="btn btn-sm btn-secondary"
                   >
                     <Phone size={14} />
                     <span>Call Now</span>
@@ -203,12 +203,12 @@ export default function HomePage() {
       </section>
 
       {/* ================= WHY CHOOSE US / BUSINESS CREDIBILITY ================= */}
-      <section className="section-py" aria-label="Why Choose Jagdamb Enterprises">
+      <section className="section-py" style={{ background: "var(--light-blue)", borderTop: "1px solid var(--light-border)", borderBottom: "1px solid var(--light-border)" }} aria-label="Why Choose Jagdamb Enterprises">
         <div className="container">
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3.5rem", alignItems: "center" }}>
             <div>
               <span className="section-eyebrow">Local Commitment</span>
-              <h2 className="section-title" style={{ textAlign: "left", marginBottom: "1.25rem" }}>
+              <h2 className="section-title" style={{ textAlign: "left", marginBottom: "1.25rem", color: "var(--dark-blue)" }}>
                 Built on Honest Advice and Uncompromising Support
               </h2>
               <p style={{ fontSize: "1.0625rem", color: "var(--text-secondary)", lineHeight: "1.7", marginBottom: "1.5rem" }}>
@@ -219,9 +219,9 @@ export default function HomePage() {
 
               <div style={{ display: "flex", flexDirection: "column", gap: "1rem", marginBottom: "2rem" }}>
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "0.75rem" }}>
-                  <CheckCircle2 size={20} color="var(--primary)" style={{ flexShrink: 0, marginTop: "2px" }} />
+                  <CheckCircle2 size={20} color="var(--deep-blue)" style={{ flexShrink: 0, marginTop: "2px" }} />
                   <div>
-                    <strong style={{ display: "block", color: "var(--text-main)" }}>Proper Sizing & No Mis-selling</strong>
+                    <strong style={{ display: "block", color: "var(--text-dark)" }}>Proper Sizing & No Mis-selling</strong>
                     <span style={{ fontSize: "0.9375rem", color: "var(--text-secondary)" }}>
                       We match machine capacity to your exact animal count and electrical supply so you don't overpay.
                     </span>
@@ -229,9 +229,9 @@ export default function HomePage() {
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "0.75rem" }}>
-                  <CheckCircle2 size={20} color="var(--primary)" style={{ flexShrink: 0, marginTop: "2px" }} />
+                  <CheckCircle2 size={20} color="var(--deep-blue)" style={{ flexShrink: 0, marginTop: "2px" }} />
                   <div>
-                    <strong style={{ display: "block", color: "var(--text-main)" }}>Food-Grade AISI 304 Stainless Steel</strong>
+                    <strong style={{ display: "block", color: "var(--text-dark)" }}>Food-Grade AISI 304 Stainless Steel</strong>
                     <span style={{ fontSize: "0.9375rem", color: "var(--text-secondary)" }}>
                       All milk-contact buckets, pails, cans, and pipeline fittings adhere to strict sanitary dairy standards.
                     </span>
@@ -239,9 +239,9 @@ export default function HomePage() {
                 </div>
 
                 <div style={{ display: "flex", alignItems: "flex-start", gap: "0.75rem" }}>
-                  <CheckCircle2 size={20} color="var(--primary)" style={{ flexShrink: 0, marginTop: "2px" }} />
+                  <CheckCircle2 size={20} color="var(--deep-blue)" style={{ flexShrink: 0, marginTop: "2px" }} />
                   <div>
-                    <strong style={{ display: "block", color: "var(--text-main)" }}>On-site Demonstrations & Staff Training</strong>
+                    <strong style={{ display: "block", color: "var(--text-dark)" }}>On-site Demonstrations & Staff Training</strong>
                     <span style={{ fontSize: "0.9375rem", color: "var(--text-secondary)" }}>
                       We show you and your shed helpers how to attach clusters gently, adjust vacuum, and maintain hygiene.
                     </span>
@@ -264,25 +264,25 @@ export default function HomePage() {
             </div>
 
             {/* Right Card Presentation */}
-            <div style={{ background: "#0D0D0D", padding: "2.5rem", borderRadius: "var(--radius-xl)", border: "1px solid #262626", borderTop: "4px solid var(--brand-red)", color: "#FFFFFF", boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.4)" }}>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "var(--brand-red)", color: "#ffffff", padding: "0.35rem 0.75rem", borderRadius: "var(--radius-full)", fontSize: "0.75rem", fontWeight: 700, marginBottom: "1.25rem" }}>
+            <div style={{ background: "#FFFFFF", padding: "2.5rem", borderRadius: "var(--radius-xl)", border: "1px solid var(--light-border)", borderTop: "4px solid var(--primary-blue)", boxShadow: "0 12px 30px -5px rgba(56, 189, 248, 0.12)" }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "var(--light-blue)", color: "var(--deep-blue)", border: "1px solid var(--light-border)", padding: "0.35rem 0.75rem", borderRadius: "var(--radius-full)", fontSize: "0.75rem", fontWeight: 700, marginBottom: "1.25rem" }}>
                 <MapPin size={14} />
-                <span>Baramati Rural, Pune</span>
+                <span>Kasaba, Malegaon Road, Baramati</span>
               </div>
 
-              <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#FFFFFF", marginBottom: "1rem" }}>
+              <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "var(--dark-blue)", marginBottom: "1rem" }}>
                 Serving the Heart of Maharashtra's Dairy Belt
               </h3>
 
-              <p style={{ fontSize: "0.9375rem", color: "#94A3B8", lineHeight: "1.6", marginBottom: "1.5rem" }}>
-                Located near PDCC Bank in Baramati Rural, we supply dairy equipment and spares across 
+              <p style={{ fontSize: "0.9375rem", color: "var(--text-secondary)", lineHeight: "1.6", marginBottom: "1.5rem" }}>
+                Located at <strong>Shop No 16, Vithal Plaza Apartment, Kasaba, Malegaon Road, Baramati</strong>, we supply dairy equipment and spares across 
                 Baramati, Indapur, Daund, Phaltan, Satara, Solapur, Ahmednagar, and adjacent dairy pockets.
               </p>
 
-              <div style={{ background: "#171717", padding: "1.25rem", borderRadius: "var(--radius-md)", border: "1px solid #2A2A2A", marginBottom: "1.5rem" }}>
-                <div style={{ fontSize: "0.8125rem", fontWeight: 600, color: "var(--brand-red)", marginBottom: "0.25rem" }}>STORE & WORKSHOP HOURS</div>
-                <div style={{ fontSize: "0.9375rem", fontWeight: 700, color: "#FFFFFF" }}>{companyConfig.businessHours.weekdays}</div>
-                <div style={{ fontSize: "0.85rem", color: "#94A3B8", marginTop: "0.25rem" }}>{companyConfig.businessHours.sunday}</div>
+              <div style={{ background: "var(--light-blue)", padding: "1.25rem", borderRadius: "var(--radius-md)", border: "1px solid var(--light-border)", marginBottom: "1.5rem" }}>
+                <div style={{ fontSize: "0.8125rem", fontWeight: 600, color: "var(--deep-blue)", marginBottom: "0.25rem" }}>STORE & WORKSHOP HOURS</div>
+                <div style={{ fontSize: "0.9375rem", fontWeight: 700, color: "var(--dark-blue)" }}>{companyConfig.businessHours.weekdays}</div>
+                <div style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginTop: "0.25rem" }}>{companyConfig.businessHours.sunday}</div>
               </div>
 
               <div style={{ display: "flex", gap: "0.75rem" }}>
@@ -373,16 +373,16 @@ export default function HomePage() {
                   flexDirection: "column"
                 }}
               >
-                <div style={{ background: "linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%)", height: "180px", display: "flex", alignItems: "center", justifyContent: "center", color: "#ffffff", padding: "1rem", textAlign: "center", position: "relative" }}>
-                  <Milk size={36} color="var(--brand-red)" style={{ opacity: 0.9 }} />
-                  <span style={{ position: "absolute", bottom: "0.5rem", right: "0.75rem", fontSize: "0.7rem", background: "rgba(0,0,0,0.7)", border: "1px solid #333333", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>
+                <div style={{ background: "linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)", height: "180px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--deep-blue)", padding: "1rem", textAlign: "center", position: "relative" }}>
+                  <Milk size={36} color="var(--deep-blue)" style={{ opacity: 0.9 }} />
+                  <span style={{ position: "absolute", bottom: "0.5rem", right: "0.75rem", fontSize: "0.7rem", background: "#FFFFFF", border: "1px solid var(--light-border)", color: "var(--deep-blue)", padding: "0.2rem 0.5rem", borderRadius: "4px", fontWeight: 700 }}>
                     {item.categoryLabel}
                   </span>
                 </div>
                 <div style={{ padding: "1.25rem", display: "flex", flexDirection: "column", flex: 1 }}>
-                  <h4 style={{ fontSize: "1.05rem", fontWeight: 700, marginBottom: "0.35rem" }}>{item.title}</h4>
+                  <h4 style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--dark-blue)", marginBottom: "0.35rem" }}>{item.title}</h4>
                   <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "0.75rem" }}>{item.caption}</p>
-                  <span style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--brand-red)", marginTop: "auto" }}>
+                  <span style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--deep-blue)", marginTop: "auto" }}>
                     {item.specs}
                   </span>
                 </div>

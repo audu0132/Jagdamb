@@ -27,7 +27,7 @@ export default function Footer() {
                 <span className="brand-title" style={{ color: "#FFFFFF" }}>
                   {companyConfig.name}
                 </span>
-                <span className="brand-subtitle" style={{ color: "var(--brand-red)" }}>
+                <span className="brand-subtitle" style={{ color: "var(--primary-blue)" }}>
                   Dairy Equipment Specialists
                 </span>
               </div>

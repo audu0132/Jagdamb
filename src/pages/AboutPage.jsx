@@ -177,17 +177,17 @@ export default function AboutPage() {
       {/* Location & Regional Reach */}
       <section className="section-py">
         <div className="container">
-          <div style={{ background: "radial-gradient(circle at 85% 15%, #1A1A1A 0%, #0D0D0D 60%, #000000 100%)", color: "#ffffff", borderRadius: "var(--radius-xl)", padding: "3rem 2.5rem", position: "relative", overflow: "hidden", border: "1px solid #262626", borderTop: "4px solid var(--brand-red)", boxShadow: "var(--shadow-xl)" }}>
+          <div style={{ background: "linear-gradient(135deg, #075985 0%, #0284C7 100%)", color: "#ffffff", borderRadius: "var(--radius-xl)", padding: "3rem 2.5rem", position: "relative", overflow: "hidden", border: "1px solid var(--light-border)", boxShadow: "0 16px 36px -8px rgba(56, 189, 248, 0.25)" }}>
             <div style={{ maxWidth: "680px" }}>
-              <span style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", color: "var(--brand-red)", fontSize: "0.8125rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.75rem" }}>
+              <span style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", color: "#E0F2FE", background: "rgba(255, 255, 255, 0.15)", padding: "0.3rem 0.75rem", borderRadius: "var(--radius-full)", fontSize: "0.8125rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.75rem" }}>
                 <MapPin size={16} />
                 <span>Geographic Coverage</span>
               </span>
               <h3 style={{ fontSize: "2rem", fontWeight: 800, color: "#ffffff", marginBottom: "1rem" }}>
                 Supporting Dairies Across Baramati & Maharashtra
               </h3>
-              <p style={{ fontSize: "1rem", color: "#E2E8F0", lineHeight: "1.65", marginBottom: "2rem" }}>
-                Our premises near PDCC Bank in Baramati Rural provide easy access for in-person equipment inspection, 
+              <p style={{ fontSize: "1rem", color: "#F0F9FF", lineHeight: "1.65", marginBottom: "2rem" }}>
+                Our premises at <strong>Shop No 16, Vithal Plaza Apartment, Kasaba, Malegaon Road, Baramati</strong> provide easy access for in-person equipment inspection, 
                 immediate spares pickup, and swift dispatch to dairy operations across Pune, Satara, Solapur, 
                 Ahmednagar, Sangli, and neighboring regions.
               </p>

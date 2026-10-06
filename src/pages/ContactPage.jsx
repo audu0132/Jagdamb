@@ -23,7 +23,7 @@ export default function ContactPage() {
 
       <PageHeader
         title="Contact Jagdamb Enterprises"
-        subtitle="We are conveniently located in Baramati Rural, Pune district. Call, visit, or message us on WhatsApp for dairy equipment guidance and orders."
+        subtitle="We are conveniently located at Shop No 16, Vithal Plaza Apartment, Kasaba, Malegaon Road, Baramati. Call, visit, or message us on WhatsApp for dairy equipment guidance and orders."
         breadcrumbs={[
           { label: "Contact Us" }
         ]}
