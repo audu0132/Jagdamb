@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { 
-  Milk, 
   MapPin, 
   Phone, 
   Mail, 
@@ -11,6 +10,7 @@ import {
 import { companyConfig } from "../data/company";
 import { categories } from "../data/categories";
 import { getWhatsAppLink, getPhoneLink } from "../utils/whatsapp";
+import logoImg from "../assets/image.png";
 
 const currentYear = new Date().getFullYear();
 
@@ -22,9 +22,7 @@ export default function Footer() {
           {/* Col 1: Brand & Identity */}
           <div>
             <div className="brand-logo" style={{ marginBottom: "1.25rem" }}>
-              <div className="brand-badge" style={{ background: "#166534" }}>
-                <Milk size={26} color="#86EFAC" />
-              </div>
+              <img src={logoImg} alt={companyConfig.name} className="brand-logo-img" style={{ height: "48px" }} />
               <div className="brand-info">
                 <span className="brand-title" style={{ color: "#FFFFFF" }}>
                   {companyConfig.name}
