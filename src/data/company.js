@@ -22,8 +22,8 @@ export const companyConfig = {
   salesEmail: "sales@jagdambenterprises.com",
 
   // Physical Location & Region
-  location: "Baramati, Pune District, Maharashtra",
-  fullAddress: "Near PDCC Bank, Baramati Rural, Baramati, District Pune, Maharashtra - 413102, India",
+  location: "Shop No 16, Vithal Plaza Apartment, Kasaba, Malegaon Road, Baramati",
+  fullAddress: "Shop No 16, Vithal Plaza Apartment, Kasaba, Malegaon Road, Baramati, Maharashtra - 413102",
   serviceArea: "Baramati, Pune, Satara, Solapur, Ahmednagar & throughout Maharashtra",
 
   // Working Hours
