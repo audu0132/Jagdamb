@@ -145,7 +145,7 @@ export default function ProductDetailPage() {
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-whatsapp btn-lg"
+                    className="btn btn-primary btn-lg"
                     style={{ flex: 1, minWidth: "200px" }}
                   >
                     <MessageCircle size={20} />

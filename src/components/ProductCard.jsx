@@ -72,7 +72,7 @@ export default function ProductCard({ product }) {
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="btn btn-whatsapp btn-sm"
+            className="btn btn-primary btn-sm"
             aria-label={`Enquire on WhatsApp for ${product.name}`}
           >
             <MessageCircle size={15} />

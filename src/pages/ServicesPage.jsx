@@ -157,16 +157,16 @@ export default function ServicesPage() {
           </div>
 
           {/* Emergency Service Banner */}
-          <div style={{ background: "linear-gradient(135deg, #072C20 0%, #0D4A36 100%)", color: "#ffffff", borderRadius: "var(--radius-xl)", padding: "2.5rem", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1.5rem" }}>
+          <div style={{ background: "radial-gradient(circle at 85% 15%, #1A1A1A 0%, #0D0D0D 60%, #000000 100%)", color: "#ffffff", borderRadius: "var(--radius-xl)", padding: "2.5rem", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1.5rem", border: "1px solid #262626", borderTop: "4px solid var(--brand-red)", boxShadow: "var(--shadow-xl)" }}>
             <div style={{ maxWidth: "600px" }}>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", color: "#FCD34D", fontSize: "0.8125rem", fontWeight: 700, textTransform: "uppercase", marginBottom: "0.5rem" }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", color: "var(--brand-red)", fontSize: "0.8125rem", fontWeight: 700, textTransform: "uppercase", marginBottom: "0.5rem" }}>
                 <Clock size={16} />
                 <span>Urgent Breakdown Support</span>
               </div>
               <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.5rem" }}>
                 Facing Milking Machine or Analyser Failure?
               </h3>
-              <p style={{ fontSize: "0.9375rem", color: "#E2E8F0", lineHeight: "1.55" }}>
+              <p style={{ fontSize: "0.9375rem", color: "#CBD5E1", lineHeight: "1.55" }}>
                 Don't let mechanical trouble disrupt your morning or evening collection shift. Call or message our Baramati helpline for rapid advice and parts dispatch.
               </p>
             </div>

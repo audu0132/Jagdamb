@@ -73,7 +73,7 @@ export default function GalleryPage() {
                 <div
                   style={{
                     height: "220px",
-                    background: "linear-gradient(135deg, #0d4a36 0%, #1e293b 100%)",
+                    background: "linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%)",
                     display: "flex",
                     flexDirection: "column",
                     alignItems: "center",
@@ -83,11 +83,11 @@ export default function GalleryPage() {
                     padding: "1.5rem"
                   }}
                 >
-                  <Milk size={44} color="#86efac" />
-                  <span style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "1px", color: "#86efac", fontWeight: 700, marginTop: "0.5rem" }}>
+                  <Milk size={44} color="var(--brand-red)" />
+                  <span style={{ fontSize: "0.75rem", textTransform: "uppercase", letterSpacing: "1px", color: "var(--brand-red)", fontWeight: 700, marginTop: "0.5rem" }}>
                     {item.categoryLabel}
                   </span>
-                  <div style={{ position: "absolute", bottom: "0.75rem", right: "0.75rem", background: "rgba(0,0,0,0.6)", color: "#ffffff", padding: "0.3rem 0.6rem", borderRadius: "var(--radius-sm)", fontSize: "0.75rem", display: "flex", alignItems: "center", gap: "0.35rem" }}>
+                  <div style={{ position: "absolute", bottom: "0.75rem", right: "0.75rem", background: "rgba(0,0,0,0.7)", border: "1px solid #333", color: "#ffffff", padding: "0.3rem 0.6rem", borderRadius: "var(--radius-sm)", fontSize: "0.75rem", display: "flex", alignItems: "center", gap: "0.35rem" }}>
                     <Eye size={13} />
                     <span>View</span>
                   </div>
@@ -138,7 +138,8 @@ export default function GalleryPage() {
                 <div
                   style={{
                     height: "240px",
-                    background: "linear-gradient(135deg, #072C20 0%, #0D4A36 100%)",
+                    background: "linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%)",
+                    border: "1px solid #262626",
                     borderRadius: "var(--radius-lg)",
                     display: "flex",
                     flexDirection: "column",
@@ -148,8 +149,8 @@ export default function GalleryPage() {
                     marginBottom: "1.5rem"
                   }}
                 >
-                  <Milk size={56} color="#86efac" />
-                  <span style={{ fontSize: "0.875rem", textTransform: "uppercase", letterSpacing: "1px", color: "#86efac", fontWeight: 700, marginTop: "0.75rem" }}>
+                  <Milk size={56} color="var(--brand-red)" />
+                  <span style={{ fontSize: "0.875rem", textTransform: "uppercase", letterSpacing: "1px", color: "var(--brand-red)", fontWeight: 700, marginTop: "0.75rem" }}>
                     {activeModalItem.categoryLabel}
                   </span>
                 </div>
