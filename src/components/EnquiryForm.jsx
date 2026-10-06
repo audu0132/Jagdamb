@@ -194,7 +194,7 @@ export default function EnquiryForm({
               id="phoneNumber"
               name="phoneNumber"
               type="tel"
-              placeholder="e.g. 9822012345"
+              placeholder="e.g. 9420771886"
               value={formData.phoneNumber}
               onChange={handleChange}
               className={`form-control ${errors.phoneNumber ? "error" : ""}`}
