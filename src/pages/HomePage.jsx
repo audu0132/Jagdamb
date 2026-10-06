@@ -8,11 +8,8 @@ import {
   ShieldCheck, 
   Wrench, 
   MapPin, 
-  Clock, 
   Milk, 
-  Activity,
-  Cpu,
-  Layers
+  Activity 
 } from "lucide-react";
 import { companyConfig } from "../data/company";
 import { categories } from "../data/categories";
