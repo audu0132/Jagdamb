@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
-import { MessageCircle, ArrowLeft, ArrowRight, ShieldCheck, Milk } from "lucide-react";
+import { MessageCircle, ArrowLeft, ArrowRight } from "lucide-react";
 import { categories } from "../data/categories";
 import { products } from "../data/products";
 import { companyConfig } from "../data/company";
