@@ -9,13 +9,13 @@ export const companyConfig = {
   subtitle: "Authorised dealer, supplier, and technical service provider for modern dairy farming and milk testing infrastructure in Maharashtra.",
   
   // WhatsApp Configuration - Single source of truth
-  // Format for wa.me URL: country code + number with no symbols/spaces (e.g., 919822000000)
-  whatsappNumber: "919822000000",
-  whatsappDisplay: "+91 98220 00000",
+  // Format for wa.me URL: country code + number with no symbols/spaces (e.g., 919420771886)
+  whatsappNumber: "919420771886",
+  whatsappDisplay: "+91 94207 71886",
 
   // Calling Phone Numbers
-  primaryPhone: "+91 98220 00000",
-  secondaryPhone: "+91 98221 11111",
+  primaryPhone: "+91 94207 71886",
+  secondaryPhone: "+91 94207 71886",
 
   // Email
   email: "contact@jagdambenterprises.com",
