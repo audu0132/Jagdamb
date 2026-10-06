@@ -5,7 +5,6 @@ import {
   Mail, 
   MessageCircle, 
   Clock, 
-  ShieldCheck, 
   Navigation, 
   ExternalLink 
 } from "lucide-react";
