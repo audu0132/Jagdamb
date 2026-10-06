@@ -1,14 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import { 
-  ShieldCheck, 
-  Clock, 
   MessageCircle, 
   Phone, 
-  CheckCircle2, 
-  Truck, 
-  Banknote, 
-  Milk 
+  CheckCircle2 
 } from "lucide-react";
 import { companyConfig } from "../data/company";
 import { getWhatsAppLink, getPhoneLink } from "../utils/whatsapp";
