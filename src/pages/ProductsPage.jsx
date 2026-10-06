@@ -1,9 +1,8 @@
 import React, { useState, useMemo } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { Search, Filter, MessageCircle, X, ShieldCheck, ArrowRight } from "lucide-react";
+import { Search, Filter, MessageCircle, X } from "lucide-react";
 import { products } from "../data/products";
 import { categories } from "../data/categories";
-import { companyConfig } from "../data/company";
 import { getWhatsAppLink } from "../utils/whatsapp";
 import SEOHead from "../components/SEOHead";
 import PageHeader from "../components/PageHeader";
