@@ -6,10 +6,8 @@ import {
   MapPin, 
   Phone, 
   MessageCircle, 
-  CheckCircle2, 
   Milk, 
   HeartHandshake, 
-  Award, 
   Truck 
 } from "lucide-react";
 import { companyConfig } from "../data/company";
