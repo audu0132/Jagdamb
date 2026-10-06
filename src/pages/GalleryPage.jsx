@@ -1,21 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { 
-  Filter, 
   MessageCircle, 
   X, 
   Eye, 
-  Milk, 
-  Activity, 
-  Snowflake, 
-  Layers, 
-  Cog, 
-  Wrench, 
-  CheckCircle2, 
-  ShieldCheck 
+  Milk 
 } from "lucide-react";
 import { galleryItems, galleryCategories } from "../data/gallery";
-import { companyConfig } from "../data/company";
 import { getWhatsAppLink } from "../utils/whatsapp";
 import SEOHead from "../components/SEOHead";
 import PageHeader from "../components/PageHeader";
