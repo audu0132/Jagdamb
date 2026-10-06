@@ -6,17 +6,15 @@ import {
   Phone, 
   Mail, 
   MessageCircle, 
-  Clock, 
-  ShieldCheck, 
-  ArrowUpRight 
+  Clock 
 } from "lucide-react";
 import { companyConfig } from "../data/company";
 import { categories } from "../data/categories";
 import { getWhatsAppLink, getPhoneLink } from "../utils/whatsapp";
 
-export default function Footer() {
-  const currentYear = new Date().getFullYear();
+const currentYear = new Date().getFullYear();
 
+export default function Footer() {
   return (
     <footer className="footer" role="contentinfo">
       <div className="container">
