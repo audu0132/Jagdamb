@@ -89,9 +89,7 @@ export default function Navbar() {
       <div className={`mobile-drawer ${mobileMenuOpen ? "open" : ""}`} role="dialog" aria-modal="true">
         <div className="drawer-header">
           <div className="brand-logo">
-            <div className="brand-badge" style={{ width: "36px", height: "36px" }}>
-              <Milk size={20} />
-            </div>
+            <img src={logoImg} alt={companyConfig.name} className="brand-logo-img" style={{ height: "42px" }} />
             <div className="brand-info">
               <span className="brand-title" style={{ fontSize: "1.05rem" }}>{companyConfig.name}</span>
               <span className="brand-subtitle">Baramati, MH</span>
