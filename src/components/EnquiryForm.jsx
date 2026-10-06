@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { products } from "../data/products";
-import { companyConfig } from "../data/company";
 import { getWhatsAppLink } from "../utils/whatsapp";
-import { CheckCircle2, MessageCircle, Send, AlertCircle, Phone } from "lucide-react";
+import { CheckCircle2, MessageCircle, Send } from "lucide-react";
 
 export default function EnquiryForm({ 
   initialProduct = "", 
@@ -76,7 +75,7 @@ export default function EnquiryForm({
         const stored = JSON.parse(localStorage.getItem("jagdamb_enquiries") || "[]");
         stored.push({ ...formData, timestamp: new Date().toISOString() });
         localStorage.setItem("jagdamb_enquiries", JSON.stringify(stored));
-      } catch (err) {
+      } catch {
         // storage disabled or unavailable
       }
     }, 600);
