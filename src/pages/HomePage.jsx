@@ -81,15 +81,15 @@ export default function HomePage() {
               {/* Factual Highlights */}
               <div className="hero-badge-bar">
                 <div className="hero-badge-item">
-                  <ShieldCheck size={18} color="#86EFAC" />
+                  <ShieldCheck size={18} color="var(--brand-red)" />
                   <span>Food-Grade SS 304 Quality</span>
                 </div>
                 <div className="hero-badge-item">
-                  <Wrench size={18} color="#86EFAC" />
+                  <Wrench size={18} color="var(--brand-red)" />
                   <span>Prompt Local Service & Spares</span>
                 </div>
                 <div className="hero-badge-item">
-                  <MapPin size={18} color="#86EFAC" />
+                  <MapPin size={18} color="var(--brand-red)" />
                   <span>Based in Baramati, Maharashtra</span>
                 </div>
               </div>
@@ -99,12 +99,12 @@ export default function HomePage() {
             <div>
               <div className="hero-card">
                 <div className="hero-card-header">
-                  <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "rgba(134, 239, 172, 0.2)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                    <Activity size={20} color="#86EFAC" />
+                  <div style={{ width: "36px", height: "36px", borderRadius: "50%", background: "rgba(254, 0, 0, 0.15)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <Activity size={20} color="var(--brand-red)" />
                   </div>
                   <div>
                     <h2 className="hero-card-title">Dairy Shed Solutions</h2>
-                    <span style={{ fontSize: "0.8rem", color: "#A7F3D0" }}>Built for Indian cattle breeds</span>
+                    <span style={{ fontSize: "0.8rem", color: "#CBD5E1" }}>Built for Indian cattle breeds</span>
                   </div>
                 </div>
 
@@ -129,7 +129,7 @@ export default function HomePage() {
 
                 <div style={{ background: "rgba(255, 255, 255, 0.08)", padding: "1rem", borderRadius: "var(--radius-md)", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
                   <div>
-                    <div style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "#A7F3D0", fontWeight: 700 }}>Direct Contact</div>
+                    <div style={{ fontSize: "0.75rem", textTransform: "uppercase", color: "var(--brand-red)", fontWeight: 700 }}>Direct Contact</div>
                     <div style={{ fontSize: "1rem", fontWeight: 700, color: "#FFFFFF" }}>{companyConfig.primaryPhone}</div>
                   </div>
                   <a
@@ -264,25 +264,25 @@ export default function HomePage() {
             </div>
 
             {/* Right Card Presentation */}
-            <div style={{ background: "var(--primary-light)", padding: "2.5rem", borderRadius: "var(--radius-xl)", border: "1px solid rgba(13, 74, 54, 0.2)" }}>
-              <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "var(--primary)", color: "#ffffff", padding: "0.35rem 0.75rem", borderRadius: "var(--radius-full)", fontSize: "0.75rem", fontWeight: 700, marginBottom: "1.25rem" }}>
+            <div style={{ background: "#0D0D0D", padding: "2.5rem", borderRadius: "var(--radius-xl)", border: "1px solid #262626", borderTop: "4px solid var(--brand-red)", color: "#FFFFFF", boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.4)" }}>
+              <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "var(--brand-red)", color: "#ffffff", padding: "0.35rem 0.75rem", borderRadius: "var(--radius-full)", fontSize: "0.75rem", fontWeight: 700, marginBottom: "1.25rem" }}>
                 <MapPin size={14} />
                 <span>Baramati Rural, Pune</span>
               </div>
 
-              <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "var(--primary-dark)", marginBottom: "1rem" }}>
+              <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#FFFFFF", marginBottom: "1rem" }}>
                 Serving the Heart of Maharashtra's Dairy Belt
               </h3>
 
-              <p style={{ fontSize: "0.9375rem", color: "var(--text-secondary)", lineHeight: "1.6", marginBottom: "1.5rem" }}>
+              <p style={{ fontSize: "0.9375rem", color: "#94A3B8", lineHeight: "1.6", marginBottom: "1.5rem" }}>
                 Located near PDCC Bank in Baramati Rural, we supply dairy equipment and spares across 
                 Baramati, Indapur, Daund, Phaltan, Satara, Solapur, Ahmednagar, and adjacent dairy pockets.
               </p>
 
-              <div style={{ background: "var(--surface)", padding: "1.25rem", borderRadius: "var(--radius-md)", border: "1px solid var(--border)", marginBottom: "1.5rem" }}>
-                <div style={{ fontSize: "0.8125rem", fontWeight: 600, color: "var(--text-muted)", marginBottom: "0.25rem" }}>STORE & WORKSHOP HOURS</div>
-                <div style={{ fontSize: "0.9375rem", fontWeight: 700, color: "var(--text-main)" }}>{companyConfig.businessHours.weekdays}</div>
-                <div style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.25rem" }}>{companyConfig.businessHours.sunday}</div>
+              <div style={{ background: "#171717", padding: "1.25rem", borderRadius: "var(--radius-md)", border: "1px solid #2A2A2A", marginBottom: "1.5rem" }}>
+                <div style={{ fontSize: "0.8125rem", fontWeight: 600, color: "var(--brand-red)", marginBottom: "0.25rem" }}>STORE & WORKSHOP HOURS</div>
+                <div style={{ fontSize: "0.9375rem", fontWeight: 700, color: "#FFFFFF" }}>{companyConfig.businessHours.weekdays}</div>
+                <div style={{ fontSize: "0.85rem", color: "#94A3B8", marginTop: "0.25rem" }}>{companyConfig.businessHours.sunday}</div>
               </div>
 
               <div style={{ display: "flex", gap: "0.75rem" }}>
@@ -373,16 +373,16 @@ export default function HomePage() {
                   flexDirection: "column"
                 }}
               >
-                <div style={{ background: "linear-gradient(135deg, #0d4a36, #1f2937)", height: "180px", display: "flex", alignItems: "center", justifyContent: "center", color: "#ffffff", padding: "1rem", textAlign: "center", position: "relative" }}>
-                  <Milk size={36} color="#86efac" style={{ opacity: 0.8 }} />
-                  <span style={{ position: "absolute", bottom: "0.5rem", right: "0.75rem", fontSize: "0.7rem", background: "rgba(0,0,0,0.5)", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>
+                <div style={{ background: "linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%)", height: "180px", display: "flex", alignItems: "center", justifyContent: "center", color: "#ffffff", padding: "1rem", textAlign: "center", position: "relative" }}>
+                  <Milk size={36} color="var(--brand-red)" style={{ opacity: 0.9 }} />
+                  <span style={{ position: "absolute", bottom: "0.5rem", right: "0.75rem", fontSize: "0.7rem", background: "rgba(0,0,0,0.7)", border: "1px solid #333333", padding: "0.2rem 0.5rem", borderRadius: "4px" }}>
                     {item.categoryLabel}
                   </span>
                 </div>
                 <div style={{ padding: "1.25rem", display: "flex", flexDirection: "column", flex: 1 }}>
                   <h4 style={{ fontSize: "1.05rem", fontWeight: 700, marginBottom: "0.35rem" }}>{item.title}</h4>
                   <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "0.75rem" }}>{item.caption}</p>
-                  <span style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--primary)", marginTop: "auto" }}>
+                  <span style={{ fontSize: "0.75rem", fontWeight: 600, color: "var(--brand-red)", marginTop: "auto" }}>
                     {item.specs}
                   </span>
                 </div>
@@ -400,7 +400,7 @@ export default function HomePage() {
       </section>
 
       {/* ================= LEAD & ENQUIRY SECTION ================= */}
-      <section className="section-py" style={{ background: "linear-gradient(180deg, #F8FAF8 0%, #EBF7EE 100%)", borderTop: "1px solid var(--border)" }} aria-label="Request a Quotation">
+      <section className="section-py" style={{ background: "var(--surface-alt)", borderTop: "1px solid var(--border)" }} aria-label="Request a Quotation">
         <div className="container">
           <div style={{ maxWidth: "840px", margin: "0 auto" }}>
             <EnquiryForm 

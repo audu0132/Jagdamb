@@ -18,68 +18,68 @@ import {
 export default function ProductImage({ src, alt, category, className = "", height = "220px" }) {
   const [hasError, setHasError] = useState(false);
 
-  // Fallback themes based on equipment category
+  // Fallback themes based on equipment category (Red, Black & White Brand Identity)
   const categoryThemes = {
     "milking-machines": {
       icon: Milk,
-      bg: "linear-gradient(135deg, #0d4a36 0%, #166534 100%)",
-      accent: "#86efac",
+      bg: "linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%)",
+      accent: "#FE0000",
       pattern: "Milking Technology • SS 304 Grade"
     },
     "milk-analysers-testing": {
       icon: Activity,
-      bg: "linear-gradient(135deg, #1e293b 0%, #0f766e 100%)",
-      accent: "#5eead4",
+      bg: "linear-gradient(135deg, #000000 0%, #171717 100%)",
+      accent: "#FE0000",
       pattern: "Ultrasonic Testing • Precision Sensor"
     },
     "cream-separators": {
       icon: Filter,
-      bg: "linear-gradient(135deg, #2e1065 0%, #4338ca 100%)",
-      accent: "#c4b5fd",
+      bg: "linear-gradient(135deg, #0D0D0D 0%, #202020 100%)",
+      accent: "#FE0000",
       pattern: "Centrifugal Separation • High RPM"
     },
     "bulk-milk-coolers": {
       icon: Snowflake,
-      bg: "linear-gradient(135deg, #0c4a6e 0%, #0284c7 100%)",
-      accent: "#7dd3fc",
+      bg: "linear-gradient(135deg, #0A0A0A 0%, #1C1C1C 100%)",
+      accent: "#FE0000",
       pattern: "Direct Expansion • 4°C Rapid Chilling"
     },
     "milk-cans-storage": {
       icon: Layers,
-      bg: "linear-gradient(135deg, #334155 0%, #475569 100%)",
-      accent: "#e2e8f0",
+      bg: "linear-gradient(135deg, #111111 0%, #222222 100%)",
+      accent: "#FE0000",
       pattern: "AISI 304 Stainless • Seamless Spun"
     },
     "dairy-processing": {
       icon: Cog,
-      bg: "linear-gradient(135deg, #7c2d12 0%, #c2410c 100%)",
-      accent: "#fdba74",
+      bg: "linear-gradient(135deg, #000000 0%, #1A1A1A 100%)",
+      accent: "#FE0000",
       pattern: "Food Grade • Commercial Dairy Processing"
     },
     "chaff-cutters": {
       icon: Scissors,
-      bg: "linear-gradient(135deg, #14532d 0%, #3f6212 100%)",
-      accent: "#bef264",
+      bg: "linear-gradient(135deg, #0A0A0A 0%, #181818 100%)",
+      accent: "#FE0000",
       pattern: "High Output • Hardened Alloy Blades"
     },
     "spare-parts-accessories": {
       icon: Wrench,
-      bg: "linear-gradient(135deg, #18181b 0%, #3f3f46 100%)",
-      accent: "#fde047",
+      bg: "linear-gradient(135deg, #000000 0%, #242424 100%)",
+      accent: "#FE0000",
       pattern: "Genuine Spares • Original Specs"
     },
     "dairy-equipment": {
       icon: Milk,
-      bg: "linear-gradient(135deg, #064e3b 0%, #047857 100%)",
-      accent: "#6ee7b7",
+      bg: "linear-gradient(135deg, #0D0D0D 0%, #1E1E1E 100%)",
+      accent: "#FE0000",
       pattern: "Dairy Equipment • Shed Machinery"
     }
   };
 
   const theme = categoryThemes[category] || {
     icon: ShieldCheck,
-    bg: "linear-gradient(135deg, #0d4a36 0%, #1f2937 100%)",
-    accent: "#86efac",
+    bg: "linear-gradient(135deg, #0A0A0A 0%, #171717 100%)",
+    accent: "#FE0000",
     pattern: "Jagdamb Dairy Equipment"
   };
 

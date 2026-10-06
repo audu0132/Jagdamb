@@ -11,11 +11,11 @@ export default function PageHeader({
   return (
     <section 
       style={{
-        background: "linear-gradient(135deg, #072C20 0%, #0D4A36 100%)",
+        background: "radial-gradient(circle at 85% 15%, #1F1F1F 0%, #0D0D0D 60%, #000000 100%)",
         color: "#ffffff",
         padding: "3.5rem 0 3.75rem 0",
         position: "relative",
-        borderBottom: "1px solid rgba(255, 255, 255, 0.1)"
+        borderBottom: "3px solid var(--brand-red)"
       }}
       aria-label="Page header"
     >
@@ -28,13 +28,13 @@ export default function PageHeader({
             alignItems: "center", 
             gap: "0.5rem", 
             fontSize: "0.8125rem", 
-            color: "#94A3B8",
+            color: "#A3A3A3",
             marginBottom: "1rem" 
           }}
         >
           <Link 
             to="/" 
-            style={{ display: "inline-flex", alignItems: "center", gap: "0.25rem", color: "#CBD5E1" }}
+            style={{ display: "inline-flex", alignItems: "center", gap: "0.25rem", color: "#E5E7EB" }}
           >
             <Home size={14} />
             <span>Home</span>
@@ -44,11 +44,11 @@ export default function PageHeader({
             <React.Fragment key={idx}>
               <ChevronRight size={14} opacity={0.6} />
               {crumb.link ? (
-                <Link to={crumb.link} style={{ color: "#CBD5E1" }}>
+                <Link to={crumb.link} style={{ color: "#E5E7EB" }}>
                   {crumb.label}
                 </Link>
               ) : (
-                <span style={{ color: "#86EFAC", fontWeight: 600 }}>{crumb.label}</span>
+                <span style={{ color: "var(--brand-red)", fontWeight: 700 }}>{crumb.label}</span>
               )}
             </React.Fragment>
           ))}

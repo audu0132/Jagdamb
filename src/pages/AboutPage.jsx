@@ -177,9 +177,9 @@ export default function AboutPage() {
       {/* Location & Regional Reach */}
       <section className="section-py">
         <div className="container">
-          <div style={{ background: "linear-gradient(135deg, #072C20 0%, #0D4A36 100%)", color: "#ffffff", borderRadius: "var(--radius-xl)", padding: "3rem 2.5rem", position: "relative", overflow: "hidden" }}>
+          <div style={{ background: "radial-gradient(circle at 85% 15%, #1A1A1A 0%, #0D0D0D 60%, #000000 100%)", color: "#ffffff", borderRadius: "var(--radius-xl)", padding: "3rem 2.5rem", position: "relative", overflow: "hidden", border: "1px solid #262626", borderTop: "4px solid var(--brand-red)", boxShadow: "var(--shadow-xl)" }}>
             <div style={{ maxWidth: "680px" }}>
-              <span style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", color: "#86EFAC", fontSize: "0.8125rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.75rem" }}>
+              <span style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem", color: "var(--brand-red)", fontSize: "0.8125rem", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", marginBottom: "0.75rem" }}>
                 <MapPin size={16} />
                 <span>Geographic Coverage</span>
               </span>

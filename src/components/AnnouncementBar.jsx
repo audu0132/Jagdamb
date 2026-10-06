@@ -28,7 +28,7 @@ export default function AnnouncementBar() {
             target="_blank" 
             rel="noopener noreferrer" 
             className="top-bar-item"
-            style={{ color: "#86efac" }}
+            style={{ color: "var(--brand-red)", fontWeight: 700 }}
           >
             <MessageCircle size={14} />
             <span>WhatsApp Quick Help</span>
