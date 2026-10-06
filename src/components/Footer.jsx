@@ -131,7 +131,12 @@ export default function Footer() {
 
         {/* Footer Bottom Strip */}
         <div className="footer-bottom">
-          <p>© {currentYear} {companyConfig.name}. All Rights Reserved. Dairy Equipment Supplier & Dealer in Maharashtra.</p>
+          <div>
+            <p>© {currentYear} {companyConfig.name}. All Rights Reserved. Dairy Equipment Supplier & Dealer in Maharashtra.</p>
+            <p style={{ marginTop: "0.35rem", fontSize: "0.8125rem", color: "#BAE6FD" }}>
+              Develop by <strong style={{ color: "#FFFFFF", fontWeight: 700 }}>Audumbar More</strong>
+            </p>
+          </div>
           <div style={{ display: "flex", gap: "1.5rem" }}>
             <Link to="/contact" style={{ color: "#94A3B8" }}>Support</Link>
             <Link to="/enquiry" style={{ color: "#94A3B8" }}>Inquiries</Link>
