@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { MessageCircle, ArrowRight, ShieldCheck } from "lucide-react";
+import { MessageCircle, ArrowRight } from "lucide-react";
 import ProductImage from "./ProductImage";
 import { getProductInquiryMessage, getWhatsAppLink } from "../utils/whatsapp";
 
