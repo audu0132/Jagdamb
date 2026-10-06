@@ -259,6 +259,7 @@ export default function EnquiryForm({
               ))}
             </optgroup>
             <optgroup label="General Categories & Services">
+              <option value="Dairy Equipment & Shed Machinery">Dairy Equipment & Shed Machinery (General)</option>
               <option value="Milking Machine Setup">Milking Machine Setup (General)</option>
               <option value="Milk Analyser & Testing Setup">Milk Analyser & Testing Unit (AMCU)</option>
               <option value="Bulk Milk Cooler (BMC)">Bulk Milk Cooler Chilling Unit</option>

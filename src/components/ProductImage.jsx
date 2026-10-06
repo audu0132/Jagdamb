@@ -67,6 +67,12 @@ export default function ProductImage({ src, alt, category, className = "", heigh
       bg: "linear-gradient(135deg, #18181b 0%, #3f3f46 100%)",
       accent: "#fde047",
       pattern: "Genuine Spares • Original Specs"
+    },
+    "dairy-equipment": {
+      icon: Milk,
+      bg: "linear-gradient(135deg, #064e3b 0%, #047857 100%)",
+      accent: "#6ee7b7",
+      pattern: "Dairy Equipment • Shed Machinery"
     }
   };
 

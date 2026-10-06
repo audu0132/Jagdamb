@@ -91,4 +91,15 @@ export const categories = [
     itemCount: 4,
     featured: true,
   },
+  {
+    id: "dairy-equipment",
+    name: "Dairy Equipment & Farm Machinery",
+    shortTitle: "Dairy Equipment",
+    slug: "dairy-equipment",
+    tagline: "Complete dairy farm tools, digital scales, plungers & cattle welfare equipment",
+    description: "Specialized tools and shed machinery including digital milk weighing scales, stainless steel plungers, samplers, cow mats, and daily collection accessories for modern dairy farms.",
+    icon: "Milk",
+    itemCount: 3,
+    featured: true,
+  },
 ];

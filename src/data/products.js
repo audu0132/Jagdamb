@@ -545,5 +545,113 @@ export const products = [
     gallery: [
       "/images/products/vacuum-pump.jpg"
     ]
+  },
+
+  // 9. Dairy Equipment & Farm Machinery (Separate Category)
+  {
+    id: "prod-de-01",
+    slug: "electronic-milk-weighing-scale-platform",
+    name: "Electronic Milk Weighing Scale & Platform (100kg / 200kg)",
+    category: "dairy-equipment",
+    categoryName: "Dairy Equipment",
+    badge: "Collection Essential",
+    isFeatured: true,
+    tagline: "Heavy-duty digital platform scale for milk cans and collection centers with dual display",
+    shortDescription: "High-accuracy digital stainless steel platform scale for instant milk can weighing, compatible with AMCU and dairy collection data processors.",
+    fullDescription: "Built specifically for humid village milk procurement centers and dairy farm collection docks. Featuring a corrosion-resistant AISI 304 stainless steel platter, water-protected load cell, and dual high-contrast green LED display for both farmer and operator.",
+    features: [
+      "Heavy-duty AISI 304 stainless steel pan resistant to milk acidity and regular washdowns",
+      "High-precision IP65 sealed strain gauge load cell with overload stopper protection",
+      "Dual LED display pole (operator facing and farmer customer facing)",
+      "Standard RS-232 serial communication port for direct AMCU analyser & computer link",
+      "Inbuilt rechargeable SMF battery providing 40+ hours backup during rural power cuts"
+    ],
+    specifications: [
+      { label: "Weighing Capacity", value: "100 kg (model DE-WS100) / 200 kg (model DE-WS200)" },
+      { label: "Accuracy / Readability", value: "10 grams (100kg) / 20 grams (200kg)" },
+      { label: "Platform Dimensions", value: "400mm x 400mm / 500mm x 500mm heavy gauge pan" },
+      { label: "Display Type", value: "Dual bright 0.8-inch Green LED digits" },
+      { label: "Battery Backup", value: "6V / 4.5Ah rechargeable battery with auto power saver" },
+      { label: "Interface", value: "RS-232C bi-directional serial port" }
+    ],
+    applications: [
+      "Village milk collection centers (VMC)",
+      "Dairy farm daily dispatch intake",
+      "Wholesale milk distribution centers"
+    ],
+    image: "/images/products/weighing-scale.jpg",
+    gallery: [
+      "/images/products/weighing-scale.jpg"
+    ]
+  },
+  {
+    id: "prod-de-02",
+    slug: "ss-milk-plunger-sampler-dipper-set",
+    name: "SS 304 Milk Plunger, Sampler & Dipper Measure Set",
+    category: "dairy-equipment",
+    categoryName: "Dairy Equipment",
+    badge: "Sanitary Grade",
+    isFeatured: false,
+    tagline: "Hygienic AISI 304 stainless steel plungers, samplers, and calibrated measuring dippers",
+    shortDescription: "Heavy-gauge food-grade SS 304 collection accessories for uniform milk stirring before fat testing, hygienic sample extraction, and accurate dispensing.",
+    fullDescription: "Standardized dairy collection tools made from certified AISI 304 stainless steel. The perforated plunger allows swift agitation to disperse fat globule layers evenly prior to analyser testing, while calibrated dippers enable hygienic sample draw.",
+    features: [
+      "Perforated plunger disc designed to mix cream without causing milk churning",
+      "Long 750mm rigid stainless handle with ergonomic grip loop",
+      "Calibrated dipping measures available in 100ml, 200ml, 500ml, and 1000ml sizes",
+      "Seamless sanitary electro-polish finish preventing milk residue or bacterial films",
+      "Suitable for boiling water sterilization and alkaline dairy detergents"
+    ],
+    specifications: [
+      { label: "Material", value: "Certified AISI 304 Food-Grade Stainless Steel" },
+      { label: "Plunger Disc Diameter", value: "150 mm / 200 mm with precision flow perforations" },
+      { label: "Handle Length", value: "750 mm (29.5 inches)" },
+      { label: "Available Dipper Sizes", value: "50ml, 100ml, 200ml, 500ml, 1000ml" },
+      { label: "Joint Construction", value: "Sanitary TIG welded, smooth crevice-free radius" }
+    ],
+    applications: [
+      "Milk collection centers and societies",
+      "Testing laboratories and sample collection docks",
+      "On-farm milk storage agitation"
+    ],
+    image: "/images/products/milk-plunger-set.jpg",
+    gallery: [
+      "/images/products/milk-plunger-set.jpg"
+    ]
+  },
+  {
+    id: "prod-de-03",
+    slug: "heavy-duty-interlocking-rubber-cow-mats",
+    name: "Heavy-Duty Interlocking Rubber Cow Mats (Cattle Shed Flooring)",
+    category: "dairy-equipment",
+    categoryName: "Dairy Equipment",
+    badge: "Animal Welfare",
+    isFeatured: true,
+    tagline: "Anti-slip, shock-absorbing barn flooring for udder protection, joint relief, and mastitis prevention",
+    shortDescription: "High-density vulcanized rubber mats designed for cattle stalls to reduce hoof injuries, prevent slipping, and keep cows clean and comfortable.",
+    fullDescription: "Cattle comfort directly translates into higher milk yields. Our heavy-duty vulcanized rubber cow mats insulate animals against cold concrete floors, cushion knee joints during resting, and feature micro-grooved bottom drainage to channel urine away, drastically lowering mastitis risks.",
+    features: [
+      "Premium vulcanized natural and synthetic rubber with high tensile strength",
+      "Textured anti-skid surface provides sure footing for cows and buffaloes",
+      "Bottom channel drainage grooves keep resting surface dry and hygienic",
+      "Protects udders and teats from bacterial infection and rough concrete abrasions",
+      "Interlocking puzzle borders or straight edges for seamless barn stall fitting"
+    ],
+    specifications: [
+      { label: "Dimensions", value: "6 ft x 4 ft (1800 mm x 1200 mm)" },
+      { label: "Thickness", value: "20 mm to 25 mm high-density rubber" },
+      { label: "Weight per Mat", value: "Approx. 38 kg - 42 kg (heavyweight, won't curl)" },
+      { label: "Top Pattern", value: "Diamond / Bubble anti-slip texture" },
+      { label: "Bottom Pattern", value: "Linear drainage flow channels" }
+    ],
+    applications: [
+      "Commercial cow & buffalo sheds",
+      "Milking parlour standing platforms",
+      "Veterinary recovery stalls"
+    ],
+    image: "/images/products/cow-mat.jpg",
+    gallery: [
+      "/images/products/cow-mat.jpg"
+    ]
   }
 ];
