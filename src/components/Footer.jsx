@@ -69,6 +69,9 @@ export default function Footer() {
                 <Link to="/products" className="footer-nav-link">Product Catalog</Link>
               </li>
               <li>
+                <Link to="/catalogue" className="footer-nav-link" style={{ color: "#38BDF8", fontWeight: 600 }}>📄 Official PDF Catalogue (2026)</Link>
+              </li>
+              <li>
                 <Link to="/services" className="footer-nav-link">Installation & Services</Link>
               </li>
               <li>
