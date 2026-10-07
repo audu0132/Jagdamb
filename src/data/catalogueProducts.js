@@ -18,7 +18,12 @@ export const catalogueCategories = [
   {
     "id": "all",
     "name": "All Catalogue Items",
-    "count": 97
+    "count": 98
+  },
+  {
+    "id": "milk-analysers",
+    "name": "Milk Analysers & Testing",
+    "description": "Ultrasonic digital milk analysers for FAT, SNF, CLR, added water & temperature"
   },
   {
     "id": "milking-machines",
@@ -180,7 +185,7 @@ export const catalogueProducts = [
     "price": "\u20b914,750",
     "priceNumeric": 14750,
     "variantPrice": "\u20b914,750 (KP Motor) | \u20b915,100 (CG & Godrej) | \u20b915,240 (Marathon) | \u20b916,340 (KP Copper) | \u20b916,600 (CG Copper)",
-    "image": "/images/catalogue/p3_img2_720x720.png",
+    "image": "/images/catalogue/c17m-kp-single-bucket.jpg",
     "badge": "Krushi Power C-Series",
     "inStock": true,
     "shortDescription": "170 LPM belt-drive vacuum pump milking machine with 0.5 HP motor options and 50ft vacuum pipe.",
@@ -224,7 +229,7 @@ export const catalogueProducts = [
     "price": "\u20b914,750",
     "priceNumeric": 14750,
     "variantPrice": "\u20b914,750 (KP Motor) | \u20b915,100 (CG & Godrej) | \u20b915,240 (Marathon) | \u20b916,340 (KP Copper) | \u20b916,600 (CG Copper)",
-    "image": "/images/catalogue/p3_img3_720x720.png",
+    "image": "/images/catalogue/c17v-kp-single-bucket.jpg",
     "badge": "Vertical Stance",
     "inStock": true,
     "shortDescription": "Vertical format C17V model with 170 LPM vacuum pump and 0.5 HP motor options.",
@@ -724,7 +729,7 @@ export const catalogueProducts = [
     "page": 9,
     "price": "Enquire for Set Price",
     "priceNumeric": 0,
-    "image": "/images/catalogue/p9_img7_596x800.png",
+    "image": "/images/catalogue/25l-milking-bucket-assembly-set.jpg",
     "badge": "Complete Bucket Set",
     "inStock": true,
     "shortDescription": "Complete 6-piece milking bucket assembly set including 25L Supreme bucket, pulsator, 240cc claw, tubes, and brushes.",
@@ -771,7 +776,7 @@ export const catalogueProducts = [
     "page": 9,
     "price": "Enquire for Set Price",
     "priceNumeric": 0,
-    "image": "/images/catalogue/p9_img1_306x400.png",
+    "image": "/images/catalogue/25l-milking-bucket-assembly-set.jpg",
     "badge": "New Sai Model",
     "inStock": true,
     "shortDescription": "Heavy-duty 25L New Sai stainless steel milking bucket complete set with claw, pulsator, and pipes.",
@@ -3220,6 +3225,55 @@ export const catalogueProducts = [
     ],
     "features": [
       "High starting torque and thermal overload protection"
+    ]
+  },
+  {
+    "id": "cat-essae-ma815",
+    "slug": "essae-ma-815-milk-analyser",
+    "name": "Essae MA-815 Ultrasonic Milk Analyser",
+    "model": "Essae MA-815",
+    "category": "milk-analysers",
+    "categoryName": "Milk Analysers & Testing",
+    "page": 1,
+    "price": "Enquire for Best Price",
+    "priceNumeric": 0,
+    "image": "/images/catalogue/essae-ma-815-milk-analyser.jpg",
+    "badge": "Essae Genuine",
+    "inStock": true,
+    "shortDescription": "Ultrasonic digital milk analyzer for rapid, chemical-free testing of Fat, SNF, Added Water, and Density in under 30 seconds.",
+    "specifications": [
+      {
+        "label": "Model",
+        "value": "Essae MA-815"
+      },
+      {
+        "label": "Parameters",
+        "value": "Fat, SNF, Added Water, Density (CLR), Temperature"
+      },
+      {
+        "label": "Measuring Time",
+        "value": "25 - 30 seconds per sample"
+      },
+      {
+        "label": "Sample Volume",
+        "value": "15 ml"
+      },
+      {
+        "label": "Display",
+        "value": "High-visibility green LED digital readout"
+      },
+      {
+        "label": "Connectivity",
+        "value": "RS-232 / USB for PC, weighing scale & slip printer"
+      }
+    ],
+    "features": [
+      "Ultra-fast measurement cycle delivering accurate results in under 30 seconds",
+      "Chemical-free ultrasonic testing without hazardous acids",
+      "Tests Fat, SNF, Added Water, Density (CLR), and Temperature simultaneously",
+      "Bright multi-segment digital display for instant sample readout",
+      "Integrated peristaltic cleaning system with dedicated suction wash pipe",
+      "Direct interface with AMCU dairy software, weighing scales, and slip printers"
     ]
   }
 ];
