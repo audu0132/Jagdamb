@@ -4,16 +4,12 @@ import {
   Download, 
   ExternalLink, 
   Search, 
-  Filter, 
   MessageCircle, 
   CheckCircle, 
-  ChevronRight, 
   Maximize2, 
   Eye, 
-  Layers,
   Sparkles,
-  PhoneCall,
-  Check
+  PhoneCall
 } from "lucide-react";
 import { catalogueProducts, catalogueCategories, pdfCatalogueInfo } from "../data/catalogueProducts";
 import { companyConfig } from "../data/company";
