@@ -508,36 +508,43 @@ export const products = [
   {
     id: "prod-cc-03",
     slug: "boxer-compact-chaff-cutter",
-    name: "Boxer Compact Chaff Cutter Machine",
+    name: "Boxer Chaff Cutter Machine",
     category: "chaff-cutters",
     categoryName: "Chaff Cutters & Fodder Machinery",
     badge: "Boxer Model",
-    isFeatured: false,
-    tagline: "Compact vertical-stance electric kutti machine with enclosed motor stand",
-    shortDescription: "Space-saving compact fodder cutter with enclosed bottom motor enclosure and 4-wheel mobility.",
-    fullDescription: "The Boxer Chaff Cutter features a space-saving vertical footprint ideal for farms with compact shed corridors. Its enclosed motor shelf keeps fodder chaff and dust away from the motor windings, extending equipment lifespan while providing consistent cut uniformity.",
+    isFeatured: true,
+    tagline: "High-capacity fodder cutter with dual electric & engine power support and conveyor feeder",
+    shortDescription: "Heavy-duty 1500–2000 kg/hr Boxer chaff cutter with 4 manganese steel blades and dual electric/petrol engine drive.",
+    fullDescription: "The Boxer Chaff Cutter is a heavy-duty, high-capacity machine built for modern dairy farms. Equipped with 4 ultra-sharp manganese steel blades and an intelligent conveyor feeding system, it effortlessly processes sugarcane, corn stalks, grass, and kadaba straw at a massive rate of 1500–2000 kg/hr. Designed for ultimate reliability, it supports both electric motors and petrol engine drives, ensuring uninterrupted fodder preparation even during power cuts.",
     features: [
-      "Vertical space-saving frame with enclosed lower motor compartment",
-      "Smooth roller feeding with self-gripping tooth design",
-      "Dual forward cutting blades with quick-sharpening design",
-      "4 Red mobility castor wheels for effortless repositioning",
-      "Low power consumption with high cutting inertia"
+      "Massive Output: Processes 1500 to 2000 kg of fodder per hour with high efficiency",
+      "Dual Power Support: Fully compatible with electric motors & petrol/fuel engines",
+      "4 Ultra-Sharp Manganese Steel Blades for clean, uniform fodder cuts",
+      "Adjustable Gear System to easily change cut lengths from 0.5-inch to 1-inch",
+      "Smart Conveyor Belt Feeding keeps hands safe while enabling rapid loading",
+      "Multi-Crop Cutting: Ideal for Sugarcane, Corn Stalks, Napier Grass, and Kadaba Straw"
     ],
     specifications: [
       { label: "Model", value: "Boxer Chaff Cutter" },
-      { label: "Output Capacity", value: "500 - 800 kg/hour" },
-      { label: "Motor", value: "2 HP Single Phase 1440 RPM Motor" },
-      { label: "Structure", value: "Heavy-gauge square tube vertical stand" },
-      { label: "Fodder Types", value: "Green grass, sorghum, dry maize, sugarcane tops" }
+      { label: "Output Capacity", value: "1500 - 2000 kg/hour" },
+      { label: "Power Source", value: "3 HP Electric Motor / Petrol Engine Compatible" },
+      { label: "Blades", value: "4 Manganese Steel Hardened Blades" },
+      { label: "Cut Size", value: "Adjustable 0.5 inch - 1.0 inch" },
+      { label: "Feed System", value: "Smart Conveyor Belt Safety Feed" },
+      { label: "Fodder Types", value: "Sugarcane, Corn Stalks, Napier Grass, Kadaba & Dry Straw" }
     ],
     applications: [
-      "Small to medium dairy farms (5 to 20 cattle)",
-      "Sheds with limited storage or maneuvering space"
+      "Medium to commercial dairy farms (10 to 60+ cows/buffaloes)",
+      "Daily fresh fodder chopping and silage bunk preparation",
+      "Farms requiring dual power backup (electric + petrol engine)"
     ],
-    image: "/images/products/chaff-cutter-boxer.jpg",
+    image: "/images/products/boxer-chaff-cutter-1-main.jpg",
     gallery: [
-      "/images/products/chaff-cutter-boxer.jpg",
-      "/images/products/chaff-cutters-series.jpg"
+      "/images/products/boxer-chaff-cutter-1-main.jpg",
+      "/images/products/boxer-chaff-cutter-2.jpg",
+      "/images/products/boxer-chaff-cutter-3.jpg",
+      "/images/products/boxer-chaff-cutter-4.jpg",
+      "/images/products/boxer-chaff-cutter-5.jpg"
     ]
   },
   {
@@ -560,19 +567,22 @@ export const products = [
     ],
     specifications: [
       { label: "Model", value: "Boxer Pro Chaff Cutter" },
-      { label: "Output Capacity", value: "800 - 1,200 kg/hour" },
-      { label: "Motor Power", value: "3 HP Single or Three Phase Motor" },
-      { label: "Cutting Mechanism", value: "Heavy flywheel with 3 hardened steel blades" },
-      { label: "Feed System", value: "Extended trough with automated intake rollers" }
+      { label: "Output Capacity", value: "1500 - 2000 kg/hour" },
+      { label: "Motor Power", value: "3 HP Single or Three Phase / Engine Support" },
+      { label: "Cutting Mechanism", value: "Heavy flywheel with 4 manganese steel blades" },
+      { label: "Feed System", value: "Extended conveyor trough with automated intake rollers" }
     ],
     applications: [
       "Commercial dairy herds (25 to 60 cows/buffaloes)",
       "Intensive fodder chopping and daily silage preparation"
     ],
-    image: "/images/products/chaff-cutter-boxer-pro.jpg",
+    image: "/images/products/boxer-chaff-cutter-2.jpg",
     gallery: [
-      "/images/products/chaff-cutter-boxer-pro.jpg",
-      "/images/products/chaff-cutters-series.jpg"
+      "/images/products/boxer-chaff-cutter-2.jpg",
+      "/images/products/boxer-chaff-cutter-1-main.jpg",
+      "/images/products/boxer-chaff-cutter-3.jpg",
+      "/images/products/boxer-chaff-cutter-4.jpg",
+      "/images/products/boxer-chaff-cutter-5.jpg"
     ]
   },
   {
