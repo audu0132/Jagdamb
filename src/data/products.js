@@ -118,6 +118,120 @@ export const products = [
       "/images/products/pipeline-milking.jpg"
     ]
   },
+  {
+    id: "prod-mm-04",
+    slug: "c17m-kp-single-bucket-milking-machine",
+    name: "C17M KP Single Bucket Milking Machine",
+    category: "milking-machines",
+    categoryName: "Milking Machines",
+    badge: "Krushi Power C-Series",
+    isFeatured: true,
+    tagline: "Heavy-duty 170 LPM belt-drive milking machine with 0.5 HP motor on square frame stand",
+    shortDescription: "Rugged green frame single bucket milking machine with 170 LPM vacuum pump, 0.5 HP motor, and 25L stainless steel bucket set.",
+    fullDescription: "The C17M KP Single Bucket Milking Machine features an ultra-sturdy green tubular steel stand housing a 170 LPM high-suction vacuum pump and a reliable 0.5 HP electric motor. Coupled with a 25L food-grade stainless steel milk bucket, high-accuracy pulsator, and stainless steel teat cups with food-grade silicone liners, it delivers smooth, fast, and stress-free milking for cattle herds across Maharashtra.",
+    features: [
+      "170 LPM vacuum pump delivering constant 45-50 kPa operational vacuum",
+      "Robust green tubular square chassis with vibration-absorbing rubber feet",
+      "0.5 HP motor choices: Krushi Power, Crompton Greaves & Godrej, Marathon, Copper",
+      "Complete 25 Ltr AISI 304 food-grade stainless steel bucket with silicone lid seal",
+      "50 Ft vacuum pipe for flexible reach across cattle stalls without moving the pump",
+      "Balanced 60/40 pulsation ratio for gentle teat massage and complete milk extraction"
+    ],
+    specifications: [
+      { label: "Model", value: "C17M KP Single Bucket" },
+      { label: "Vacuum Pump", value: "170 LPM Rotary Vacuum Pump" },
+      { label: "Motor Options", value: "0.5 HP (KP, CG & Godrej, Marathon, Copper Winding)" },
+      { label: "Bucket", value: "25 Ltr Stainless Steel AISI 304" },
+      { label: "Vacuum Pipe", value: "50 Ft Heavy Rubber Vacuum Pipe" },
+      { label: "Milking Rate", value: "8 - 12 cows or buffaloes per hour" },
+      { label: "Price", value: "₹14,750 (KP Motor) | Up to ₹16,600 (Copper Motor)" }
+    ],
+    applications: [
+      "Small to medium dairy farms (5 to 25 cattle)",
+      "Individual dairy farmers wanting stationary stand convenience",
+      "Crossbred cows and Murrah buffalo milking"
+    ],
+    image: "/images/products/c17m-kp-single-bucket.jpg",
+    gallery: [
+      "/images/products/c17m-kp-single-bucket.jpg",
+      "/images/products/25l-milking-bucket-assembly-set.jpg"
+    ]
+  },
+  {
+    id: "prod-mm-05",
+    slug: "c17v-kp-single-bucket-milking-machine",
+    name: "C17V KP Single Bucket Milking Machine",
+    category: "milking-machines",
+    categoryName: "Milking Machines",
+    badge: "Oil-Bath Pump Model",
+    isFeatured: true,
+    tagline: "Square oil-bath vacuum pump milking machine with heavy frame stand and 25L SS bucket",
+    shortDescription: "Commercial-grade single bucket machine equipped with square oil-bath vacuum pump and 0.5 HP motor for long duty cycles.",
+    fullDescription: "The C17V KP model is engineered for dairy farmers requiring extended daily run times. Its square oil-bath vacuum pump provides exceptional internal lubrication and thermal dissipation, keeping operating temperatures low during back-to-back milking. Includes heavy green square stand, 0.5 HP motor, 25L stainless steel bucket, and 50ft vacuum pipe.",
+    features: [
+      "Square oil-bath vacuum pump engineered for extended continuous operation",
+      "Heavy-duty square frame stand with anti-vibration rubber base pads",
+      "0.5 HP electric motor with thermal protection and multi-brand compatibility",
+      "Hygienic 25-litre food-grade stainless steel milk can with transparent lid insert",
+      "Supplied with genuine pneumatic pulsator and 4-cup stainless teat cluster",
+      "50 feet vacuum line allows distant stall milking while pump stays outside shed"
+    ],
+    specifications: [
+      { label: "Model", value: "C17V KP Single Bucket" },
+      { label: "Pump Type", value: "170 LPM Square Oil-Bath Vacuum Pump" },
+      { label: "Motor", value: "0.5 HP Single Phase 220V Motor Options" },
+      { label: "Bucket", value: "25 Ltr Stainless Steel Container" },
+      { label: "Vacuum Pipe", value: "50 Ft Heavy Duty Vacuum Pipe" },
+      { label: "Price", value: "₹14,750 (KP Motor) | Up to ₹16,600 (Copper Motor)" }
+    ],
+    applications: [
+      "Medium dairy farms (10 to 30 cows/buffaloes)",
+      "Intensive morning and evening milking shifts",
+      "Farms prioritizing maximum vacuum pump lifespan"
+    ],
+    image: "/images/products/c17v-kp-single-bucket.jpg",
+    gallery: [
+      "/images/products/c17v-kp-single-bucket.jpg",
+      "/images/products/25l-milking-bucket-assembly-set.jpg"
+    ]
+  },
+  {
+    id: "prod-mm-06",
+    slug: "25l-stainless-steel-milking-bucket-assembly-set",
+    name: "25L Stainless Steel Milking Bucket Assembly Set",
+    category: "milking-machines",
+    categoryName: "Milking Machines",
+    badge: "Complete Cluster Set",
+    isFeatured: false,
+    tagline: "Complete 25L SS 304 bucket assembly with pulsator, claw, shells, liners and hoses",
+    shortDescription: "Complete plug-and-play milking bucket set including 25L AISI 304 bucket, pneumatic pulsator, 240cc claw, and teat cluster.",
+    fullDescription: "A turnkey milking bucket set ready to connect directly to any vacuum pipeline or trolley machine. Features a mirror-finish 25-litre food-grade stainless steel bucket, airtight silicone lid gasket, high-precision 60/40 pneumatic pulsator, large 240cc milk claw, 4 stainless steel teat shells with silicone liners, and food-grade transparent milking tubes.",
+    features: [
+      "Seamless spun food-grade AISI 304 stainless steel body with sturdy carry handle",
+      "Airtight curved silicone lid gasket preventing vacuum loss",
+      "Precision 60/40 alternating pneumatic pulsator mounted on lid",
+      "240cc high-capacity milk claw with transparent inspection top",
+      "4 Stainless steel teat cup shells with food-grade silicone liners",
+      "Food-grade milk and pulsation tubes included"
+    ],
+    specifications: [
+      { label: "Bucket Capacity", value: "25 Liters AISI 304 Stainless Steel" },
+      { label: "Pulsator", value: "60:40 Ratio Pneumatic Pulsator" },
+      { label: "Claw Piece", value: "240cc with Shut-Off Valve" },
+      { label: "Teat Cups", value: "4 Stainless Steel Shells with Liners" },
+      { label: "Tubes Included", value: "5 Ft Milk Tube + 10 Ft Vacuum Pipe" },
+      { label: "Cleaning Set", value: "Full Tube & Liner Brush Set Included" }
+    ],
+    applications: [
+      "Direct replacement or extra bucket set for existing milking machines",
+      "Pipeline milking installations",
+      "Adding second bucket station to expand milking capacity"
+    ],
+    image: "/images/products/25l-milking-bucket-assembly-set.jpg",
+    gallery: [
+      "/images/products/25l-milking-bucket-assembly-set.jpg"
+    ]
+  },
 
   // 2. Milk Analysers & Testing Equipment
   {
