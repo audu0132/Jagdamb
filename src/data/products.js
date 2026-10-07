@@ -307,6 +307,44 @@ export const products = [
       "/images/products/amcu-setup.jpg"
     ]
   },
+  {
+    id: "prod-ma-03",
+    slug: "essae-ma-815-milk-analyser",
+    name: "Essae MA-815 Ultrasonic Milk Analyser",
+    category: "milk-analysers-testing",
+    categoryName: "Milk Analysers & Testing",
+    badge: "Essae Model",
+    isFeatured: true,
+    tagline: "High-speed digital milk tester with digital display for Fat, SNF, CLR and added water",
+    shortDescription: "Original Essae MA-815 ultrasonic milk analyser for rapid, reliable milk quality testing at collection centers and cooperative societies.",
+    fullDescription: "The Essae MA-815 is an advanced ultrasonic milk testing machine trusted by dairy cooperatives and collection centers throughout Maharashtra. It performs rapid, accurate analysis of raw milk parameters including Fat, SNF, and Density without requiring expensive or hazardous chemicals. Features a bright green digital display, integrated peristaltic cleaning system, and seamless connectivity to thermal printers and weighing scales.",
+    features: [
+      "Ultra-fast measurement cycle delivering results in under 30 seconds",
+      "Tests Fat, SNF, Added Water, Density (CLR), and Temperature simultaneously",
+      "Bright multi-segment digital display for instant sample readout",
+      "Sturdy top handle and compact desktop footprint for easy field portability",
+      "Automatic daily cleaning cycle with dedicated wash suction tube",
+      "Serial interface for instant connectivity to AMCU software and slip printers"
+    ],
+    specifications: [
+      { label: "Model", value: "Essae MA-815" },
+      { label: "Parameters Measured", value: "Fat, SNF, Added Water, Density/CLR, Temp" },
+      { label: "Measuring Time", value: "25 - 30 seconds" },
+      { label: "Sample Volume", value: "15 ml" },
+      { label: "Display", value: "High-visibility digital LED readout" },
+      { label: "Interface", value: "RS-232 / USB for PC, scale & printer" },
+      { label: "Power Supply", value: "220V AC / 12V DC battery compatible" }
+    ],
+    applications: [
+      "Village milk collection centers (VMC)",
+      "Dairy cooperative societies & BMC centers",
+      "Private dairy testing labs and chilling centers"
+    ],
+    image: "/images/products/essae-ma-815-milk-analyser.jpg",
+    gallery: [
+      "/images/products/essae-ma-815-milk-analyser.jpg"
+    ]
+  },
 
   // 3. Cream Separators
   {
