@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, Link, Navigate } from "react-router-dom";
 import { 
   MessageCircle, 
@@ -21,6 +21,14 @@ export default function ProductDetailPage() {
   const { slug } = useParams();
 
   const product = products.find((p) => p.slug === slug);
+
+  const [activeImage, setActiveImage] = useState(product?.image);
+
+  useEffect(() => {
+    if (product) {
+      setActiveImage(product.image);
+    }
+  }, [product?.slug, product?.image]);
 
   if (!product) {
     return <Navigate to="/products" replace />;
@@ -81,16 +89,57 @@ export default function ProductDetailPage() {
                   borderRadius: "var(--radius-xl)", 
                   overflow: "hidden",
                   boxShadow: "var(--shadow-md)",
-                  marginBottom: "1.5rem"
+                  marginBottom: product.gallery && product.gallery.length > 1 ? "0.75rem" : "1.5rem"
                 }}
               >
                 <ProductImage
-                  src={product.image}
+                  src={activeImage || product.image}
                   alt={product.name}
                   category={product.category}
                   height="380px"
                 />
               </div>
+
+              {/* Gallery Thumbnails if multiple images exist */}
+              {product.gallery && product.gallery.length > 1 && (
+                <div 
+                  style={{ 
+                    display: "flex", 
+                    gap: "0.5rem", 
+                    marginBottom: "1.5rem", 
+                    overflowX: "auto", 
+                    paddingBottom: "0.25rem" 
+                  }}
+                >
+                  {product.gallery.map((imgUrl, idx) => (
+                    <button
+                      key={idx}
+                      type="button"
+                      onClick={() => setActiveImage(imgUrl)}
+                      style={{
+                        border: activeImage === imgUrl ? "2px solid var(--primary)" : "1px solid var(--border)",
+                        borderRadius: "var(--radius-md)",
+                        overflow: "hidden",
+                        width: "68px",
+                        height: "68px",
+                        padding: "2px",
+                        background: "#ffffff",
+                        cursor: "pointer",
+                        flexShrink: 0,
+                        transition: "all 0.2s ease",
+                        boxShadow: activeImage === imgUrl ? "0 0 0 2px rgba(2, 132, 199, 0.25)" : "none"
+                      }}
+                      aria-label={`View photo ${idx + 1}`}
+                    >
+                      <img
+                        src={imgUrl}
+                        alt={`${product.name} thumbnail ${idx + 1}`}
+                        style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }}
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
 
               {/* Trust Callout under image */}
               <div style={{ background: "var(--surface-alt)", border: "1px solid var(--border)", borderRadius: "var(--radius-lg)", padding: "1.25rem", display: "flex", flexDirection: "column", gap: "0.75rem" }}>

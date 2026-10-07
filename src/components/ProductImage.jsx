@@ -181,7 +181,18 @@ export default function ProductImage({ src, alt, category, className = "", heigh
   }
 
   return (
-    <div className={`product-image-container ${className}`} style={{ minHeight: height, position: "relative", overflow: "hidden" }}>
+    <div 
+      className={`product-image-container ${className}`} 
+      style={{ 
+        minHeight: height, 
+        position: "relative", 
+        overflow: "hidden",
+        backgroundColor: "#ffffff",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center"
+      }}
+    >
       <img
         src={src}
         alt={alt}
@@ -190,8 +201,9 @@ export default function ProductImage({ src, alt, category, className = "", heigh
         style={{
           width: "100%",
           height: height,
-          objectFit: "cover",
+          objectFit: "contain",
           display: "block",
+          padding: "0.5rem",
           transition: "transform 0.4s ease"
         }}
       />

@@ -64,10 +64,10 @@ export const categories = [
     shortTitle: "Processing Equipment",
     slug: "dairy-processing",
     tagline: "Equipment for Khoa, Paneer, Ghee, Curd & Pasteurization",
-    description: "Commercial ghee boilers, mechanical and pneumatic paneer presses, khoa making machines, batch pasteurizers, and butter churners for value-added dairy product manufacturing.",
+    description: "Commercial ghee boilers, mechanical screw and pneumatic paneer presses, khoa making machines, batch pasteurizers, and butter churners for value-added dairy product manufacturing.",
     icon: "Cog",
-    itemCount: 3,
-    featured: false,
+    itemCount: 2,
+    featured: true,
   },
   {
     id: "chaff-cutters",
@@ -77,8 +77,8 @@ export const categories = [
     tagline: "High-output green and dry fodder cutting for cattle nutrition",
     description: "Heavy-duty electric motor and engine-operated chaff cutters, silage cutters with hardened alloy blades designed for high throughput and reduced fodder wastage.",
     icon: "Scissors",
-    itemCount: 3,
-    featured: false,
+    itemCount: 6,
+    featured: true,
   },
   {
     id: "spare-parts-accessories",
@@ -99,7 +99,7 @@ export const categories = [
     tagline: "Complete dairy farm tools, digital scales, plungers & cattle welfare equipment",
     description: "Specialized tools and shed machinery including digital milk weighing scales, stainless steel plungers, samplers, cow mats, and daily collection accessories for modern dairy farms.",
     icon: "Milk",
-    itemCount: 3,
+    itemCount: 4,
     featured: true,
   },
 ];
