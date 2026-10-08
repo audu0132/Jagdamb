@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { Search, Filter, MessageCircle, X, FileText, ArrowRight } from "lucide-react";
+import { Search, Filter, MessageCircle, X } from "lucide-react";
 import { products } from "../data/products";
 import { categories } from "../data/categories";
 import { getWhatsAppLink } from "../utils/whatsapp";
@@ -85,52 +85,6 @@ export default function ProductsPage() {
 
       <section className="section-py">
         <div className="container">
-          {/* Official PDF Catalogue Callout Banner */}
-          <div 
-            style={{ 
-              background: "linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)", 
-              border: "1px solid #BAE6FD", 
-              borderRadius: "var(--radius-lg)", 
-              padding: "1.25rem 1.75rem", 
-              marginBottom: "2rem",
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              flexWrap: "wrap",
-              gap: "1rem"
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", gap: "1rem" }}>
-              <div 
-                style={{ 
-                  width: "44px", 
-                  height: "44px", 
-                  borderRadius: "50%", 
-                  background: "#0284C7", 
-                  color: "#FFFFFF", 
-                  display: "flex", 
-                  alignItems: "center", 
-                  justifyContent: "center",
-                  flexShrink: 0
-                }}
-              >
-                <FileText size={22} />
-              </div>
-              <div>
-                <strong style={{ fontSize: "1.05rem", color: "#0F172A", display: "block" }}>
-                  Official 2026 Dairy Equipment PDF Catalogue (23 Pages)
-                </strong>
-                <p style={{ margin: "0.15rem 0 0", fontSize: "0.875rem", color: "#475569" }}>
-                  View the complete manufacturer document with 97+ milking machines, pumps, motors, pulsators, and spare parts.
-                </p>
-              </div>
-            </div>
-            <Link to="/catalogue" className="btn btn-primary btn-sm" style={{ display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
-              <span>View & Download PDF Catalogue</span>
-              <ArrowRight size={15} />
-            </Link>
-          </div>
-
           {/* Filter & Search Toolbar */}
           <div className="catalog-toolbar">
             {/* Search Input */}
