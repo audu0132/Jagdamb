@@ -309,40 +309,74 @@ export const products = [
   },
   {
     id: "prod-ma-03",
-    slug: "essae-ma-815-milk-analyser",
-    name: "Essae MA-815 Ultrasonic Milk Analyser",
+    slug: "ma-815bs-milk-analyser-with-stirrer",
+    name: "MA-815BS Milk Analyser with Stirrer",
     category: "milk-analysers-testing",
     categoryName: "Milk Analysers & Testing",
-    badge: "Essae Model",
+    badge: "Built-In Battery",
     isFeatured: true,
-    tagline: "High-speed digital milk tester with digital display for Fat, SNF, CLR and added water",
-    shortDescription: "Original Essae MA-815 ultrasonic milk analyser for rapid, reliable milk quality testing at collection centers and cooperative societies.",
-    fullDescription: "The Essae MA-815 is an advanced ultrasonic milk testing machine trusted by dairy cooperatives and collection centers throughout Maharashtra. It performs rapid, accurate analysis of raw milk parameters including Fat, SNF, and Density without requiring expensive or hazardous chemicals. Features a bright green digital display, integrated peristaltic cleaning system, and seamless connectivity to thermal printers and weighing scales.",
+    tagline: "Experience Precision with Portability",
+    shortDescription: "Ultrasonic sensor milk analyser with built-in battery backup and integrated destructive ultrasonic stirrer for fast multi-parameter milk analysis.",
+    fullDescription: "The MA-815BS Milk Analyser with Stirrer is an advanced ultrasonic milk testing instrument housed in durable SS-304. Designed for portability and field precision, it features an integrated destructive type ultrasonic stirrer with ball-type vibrator, 2 x 20 character LCD display, 250 cycles battery backup, and 38-second measuring speed for 7 essential milk parameters.",
     features: [
-      "Ultra-fast measurement cycle delivering results in under 30 seconds",
-      "Tests Fat, SNF, Added Water, Density (CLR), and Temperature simultaneously",
-      "Bright multi-segment digital display for instant sample readout",
-      "Sturdy top handle and compact desktop footprint for easy field portability",
-      "Automatic daily cleaning cycle with dedicated wash suction tube",
-      "Serial interface for instant connectivity to AMCU software and slip printers"
+      "Ultrasonic sensor technology for accurate, chemical-free milk analysis",
+      "Integrated destructive type ultrasonic stirrer with SS-304 ball type vibrator",
+      "Built-in battery backup supporting up to 250 operational cycles",
+      "Robust SS-304 stainless steel housing construction",
+      "38-second measuring time at 30°C milk temperature with 25 ml sample volume",
+      "Simultaneous measurement of 7 parameters: Fat, SNF, Added Water, CLR, Lactose, Protein, and Salt",
+      "Dual cleaning options: Manual and Auto cleaning",
+      "1 x RS-232 serial interface with cable for external data connectivity"
     ],
     specifications: [
-      { label: "Model", value: "Essae MA-815" },
-      { label: "Parameters Measured", value: "Fat, SNF, Added Water, Density/CLR, Temp" },
-      { label: "Measuring Time", value: "25 - 30 seconds" },
-      { label: "Sample Volume", value: "15 ml" },
-      { label: "Display", value: "High-visibility digital LED readout" },
-      { label: "Interface", value: "RS-232 / USB for PC, scale & printer" },
-      { label: "Power Supply", value: "220V AC / 12V DC battery compatible" }
+      { label: "Model", value: "MA-815BS" },
+      { label: "Technology", value: "Ultrasonic Sensor" },
+      { label: "Measuring Time", value: "38 sec @ 30°C Milk Temperature" },
+      { label: "Milk Acidity", value: "<25° T (Degree Thörner)" },
+      { label: "Milk Measuring Temperature", value: "10°C ~ 40°C" },
+      { label: "Milk Sample Volume", value: "25 ml" },
+      { label: "Display", value: "2 x 20 Character LCD Display" },
+      { label: "Keyboard", value: "4 Keys" },
+      { label: "Interface", value: "1 x RS-232 Serial with Cable" },
+      { label: "Cleaning", value: "Manual & Auto" },
+      { label: "Weight", value: "4.2 kg" },
+      { label: "Housing MOC", value: "SS-304" },
+      { label: "External Power Adaptor", value: "12V DC / 5A, 60W" },
+      { label: "Power Consumption", value: "40 W Maximum" },
+      { label: "Battery Backup", value: "250 Cycles Operation" }
     ],
+    measurementParameters: [
+      { parameter: "Fat", range: "0.5 ~ 15%", resolution: "0.1%", accuracy: "+/- 0.1%" },
+      { parameter: "SNF", range: "3 ~ 15%", resolution: "0.1%", accuracy: "+/- 0.2%" },
+      { parameter: "Added Water", range: "0 ~ 99%", resolution: "1%", accuracy: "+/- 3%" },
+      { parameter: "CLR", range: "20 ~ 40", resolution: "0.5", accuracy: "+/- 1" },
+      { parameter: "Lactose", range: "1 ~ 8%", resolution: "0.1%", accuracy: "+/- 0.2%" },
+      { parameter: "Protein", range: "1 ~ 6%", resolution: "0.1%", accuracy: "+/- 0.2%" },
+      { parameter: "Salt", range: "0.2 ~ 1.5%", resolution: "0.1%", accuracy: "+/- 0.2%" }
+    ],
+    stirrerSpecifications: [
+      { label: "Technology", value: "Destructive Type Ultrasonic" },
+      { label: "Display", value: "2 Digits 7 Segment Green LED" },
+      { label: "Keys", value: "3 Keys" },
+      { label: "Frequency", value: "12 ~ 22 kHz" },
+      { label: "Timer", value: "5 ~ 45 sec" },
+      { label: "Stirrer Vibrator", value: "Ball Type (SS-304)" }
+    ],
+    pdfDocument: {
+      title: "MA-815BS Milk Analyser with Stirrer Official Product Catalogue",
+      fileName: "CAT-MA-815BS.pdf",
+      url: "/documents/CAT-MA-815BS.pdf"
+    },
+    customWhatsAppMessage: "Hello, I am interested in the MA-815BS Milk Analyser with Stirrer. Please share more details and pricing.",
     applications: [
       "Village milk collection centers (VMC)",
-      "Dairy cooperative societies & BMC centers",
-      "Private dairy testing labs and chilling centers"
+      "Dairy cooperative societies & bulk milk procurement centers",
+      "Milk chilling plants, testing docks & quality control laboratories"
     ],
-    image: "/images/products/essae-ma-815-milk-analyser.jpg",
+    image: "/images/products/ma-815bs-milk-analyser.jpg",
     gallery: [
-      "/images/products/essae-ma-815-milk-analyser.jpg"
+      "/images/products/ma-815bs-milk-analyser.jpg",
+      "/images/products/ma-815bs-dimensions.png"
     ]
   },
 

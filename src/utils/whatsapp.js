@@ -19,6 +19,7 @@ export const getWhatsAppLink = (message = "") => {
  */
 export const getProductInquiryMessage = (product) => {
   if (!product) return `Hello ${companyConfig.name}, I am interested in your dairy equipment. Please share details and pricing.`;
+  if (product.customWhatsAppMessage) return product.customWhatsAppMessage;
   return `Hello ${companyConfig.name}, I am interested in: *${product.name}* (Category: ${product.categoryName || product.category}). Please share technical details, availability, and best price for Baramati/Maharashtra delivery.`;
 };
 
