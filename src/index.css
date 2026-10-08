@@ -507,7 +507,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1002;
   box-shadow: var(--shadow-xl);
   transform: translateX(100%);
-  transition: transform var(--transition-smooth);
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform var(--transition-smooth), visibility var(--transition-smooth);
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
@@ -517,6 +519,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .mobile-drawer.open {
   transform: translateX(0);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .drawer-header {
