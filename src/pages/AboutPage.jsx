@@ -34,7 +34,7 @@ export default function AboutPage() {
       {/* Main Story & Introduction */}
       <section className="section-py">
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: "3.5rem", alignItems: "center" }}>
+          <div className="responsive-split-grid">
             <div>
               <span className="section-eyebrow">Company Profile</span>
               <h2 className="section-title" style={{ textAlign: "left", marginBottom: "1.25rem" }}>
@@ -75,7 +75,7 @@ export default function AboutPage() {
             </div>
 
             {/* Quick Fact Card */}
-            <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius-xl)", padding: "2.25rem", boxShadow: "var(--shadow-md)" }}>
+            <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius-xl)", padding: "clamp(1.25rem, 4vw, 2.25rem)", boxShadow: "var(--shadow-md)" }}>
               <div style={{ borderBottom: "1px solid var(--border)", paddingBottom: "1.25rem", marginBottom: "1.5rem" }}>
                 <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "var(--primary-dark)" }}>
                   Core Business Pillars
@@ -138,7 +138,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "1.75rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", gap: "1.75rem" }}>
             <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius-lg)", padding: "1.75rem" }}>
               <div style={{ color: "var(--primary)", marginBottom: "1rem" }}><Milk size={32} /></div>
               <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "0.5rem" }}>Milking Automation</h3>

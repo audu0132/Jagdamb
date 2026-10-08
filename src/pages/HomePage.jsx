@@ -205,7 +205,7 @@ export default function HomePage() {
       {/* ================= WHY CHOOSE US / BUSINESS CREDIBILITY ================= */}
       <section className="section-py" style={{ background: "var(--light-blue)", borderTop: "1px solid var(--light-border)", borderBottom: "1px solid var(--light-border)" }} aria-label="Why Choose Jagdamb Enterprises">
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "3.5rem", alignItems: "center" }}>
+          <div className="responsive-split-grid equal">
             <div>
               <span className="section-eyebrow">Local Commitment</span>
               <h2 className="section-title" style={{ textAlign: "left", marginBottom: "1.25rem", color: "var(--dark-blue)" }}>
@@ -264,7 +264,7 @@ export default function HomePage() {
             </div>
 
             {/* Right Card Presentation */}
-            <div style={{ background: "#FFFFFF", padding: "2.5rem", borderRadius: "var(--radius-xl)", border: "1px solid var(--light-border)", borderTop: "4px solid var(--primary-blue)", boxShadow: "0 12px 30px -5px rgba(56, 189, 248, 0.12)" }}>
+            <div style={{ background: "#FFFFFF", padding: "clamp(1.25rem, 4vw, 2.5rem)", borderRadius: "var(--radius-xl)", border: "1px solid var(--light-border)", borderTop: "4px solid var(--primary-blue)", boxShadow: "0 12px 30px -5px rgba(56, 189, 248, 0.12)" }}>
               <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", background: "var(--light-blue)", color: "var(--deep-blue)", border: "1px solid var(--light-border)", padding: "0.35rem 0.75rem", borderRadius: "var(--radius-full)", fontSize: "0.75rem", fontWeight: 700, marginBottom: "1.25rem" }}>
                 <MapPin size={14} />
                 <span>Kasaba, Malegaon Road, Baramati</span>
@@ -285,8 +285,8 @@ export default function HomePage() {
                 <div style={{ fontSize: "0.85rem", color: "var(--text-muted)", marginTop: "0.25rem" }}>{companyConfig.businessHours.sunday}</div>
               </div>
 
-              <div style={{ display: "flex", gap: "0.75rem" }}>
-                <Link to="/contact" className="btn btn-primary" style={{ flex: 1 }}>
+              <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
+                <Link to="/contact" className="btn btn-primary" style={{ flex: "1 1 140px", justifyContent: "center" }}>
                   Visit / Contact Us
                 </Link>
                 <a
@@ -294,7 +294,7 @@ export default function HomePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-secondary"
-                  style={{ flex: 1 }}
+                  style={{ flex: "1 1 140px", justifyContent: "center" }}
                 >
                   <MapPin size={16} />
                   <span>Google Maps</span>
@@ -360,7 +360,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: "1.5rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(100%, 280px), 1fr))", gap: "1.5rem" }}>
             {galleryItems.slice(0, 4).map((item) => (
               <div 
                 key={item.id} 

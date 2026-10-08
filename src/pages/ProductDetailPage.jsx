@@ -557,7 +557,7 @@ export default function ProductDetailPage() {
               <div 
                 style={{ 
                   display: "grid", 
-                  gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", 
+                  gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 280px), 1fr))", 
                   gap: "1rem" 
                 }}
               >

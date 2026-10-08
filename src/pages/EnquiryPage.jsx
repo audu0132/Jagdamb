@@ -27,7 +27,7 @@ export default function EnquiryPage() {
 
       <section className="section-py">
         <div className="container">
-          <div style={{ display: "grid", gridTemplateColumns: "1.2fr 0.8fr", gap: "3.5rem", alignItems: "flex-start" }}>
+          <div className="responsive-split-grid start">
             {/* Left: The Form */}
             <div>
               <EnquiryForm
@@ -39,7 +39,7 @@ export default function EnquiryPage() {
             {/* Right: Why Request From Jagdamb & Direct Call Box */}
             <div>
               {/* Trust Card */}
-              <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius-xl)", padding: "2rem", marginBottom: "2rem", boxShadow: "var(--shadow-sm)" }}>
+              <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius-xl)", padding: "clamp(1.25rem, 4vw, 2rem)", marginBottom: "2rem", boxShadow: "var(--shadow-sm)" }}>
                 <h3 style={{ fontSize: "1.25rem", fontWeight: 700, color: "var(--primary-dark)", marginBottom: "1rem" }}>
                   What You Receive With Every Quote
                 </h3>

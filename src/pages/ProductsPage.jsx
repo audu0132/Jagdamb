@@ -209,7 +209,7 @@ export default function ProductsPage() {
           )}
 
           {/* Bottom Custom Consultation Banner */}
-          <div style={{ marginTop: "4.5rem", background: "var(--surface-alt)", border: "1px solid var(--border)", borderRadius: "var(--radius-xl)", padding: "2.5rem", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1.5rem" }}>
+          <div style={{ marginTop: "4.5rem", background: "var(--surface-alt)", border: "1px solid var(--border)", borderRadius: "var(--radius-xl)", padding: "clamp(1.25rem, 4vw, 2.5rem)", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1.5rem" }}>
             <div style={{ maxWidth: "620px" }}>
               <h3 style={{ fontSize: "1.35rem", fontWeight: 700, marginBottom: "0.5rem" }}>
                 Need Custom Sizing or an Unlisted Spare Part?
@@ -218,8 +218,8 @@ export default function ProductsPage() {
                 We source specific milking machine motors, custom pipeline loops, high-capacity chillers, and specialized analyser consumables on demand. Share your shed specifications with our technical team.
               </p>
             </div>
-            <div style={{ display: "flex", gap: "0.75rem" }}>
-              <Link to="/enquiry" className="btn btn-primary">
+            <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap", width: "100%", maxWidth: "420px" }}>
+              <Link to="/enquiry" className="btn btn-primary" style={{ flex: "1 1 170px", justifyContent: "center" }}>
                 Request Custom Quote
               </Link>
               <a
@@ -227,6 +227,7 @@ export default function ProductsPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-whatsapp"
+                style={{ flex: "1 1 170px", justifyContent: "center" }}
               >
                 <MessageCircle size={18} />
                 <span>WhatsApp Specialist</span>

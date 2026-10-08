@@ -32,7 +32,7 @@ export default function ContactPage() {
       <section className="section-py">
         <div className="container">
           {/* Contact Details Cards */}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "1.5rem", marginBottom: "3.5rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 260px), 1fr))", gap: "1.5rem", marginBottom: "3.5rem" }}>
             {/* Address */}
             <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius-xl)", padding: "1.75rem", display: "flex", flexDirection: "column" }}>
               <div style={{ width: "48px", height: "48px", borderRadius: "var(--radius-md)", background: "var(--primary-light)", color: "var(--primary)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "1.25rem" }}>
@@ -116,7 +116,7 @@ export default function ContactPage() {
           </div>
 
           {/* Form & Map 2-Column Section */}
-          <div style={{ display: "grid", gridTemplateColumns: "1.1fr 0.9fr", gap: "3.5rem", alignItems: "flex-start" }}>
+          <div className="responsive-split-grid start">
             {/* Left: Enquiry Form */}
             <div>
               <EnquiryForm

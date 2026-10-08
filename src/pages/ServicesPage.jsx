@@ -157,7 +157,7 @@ export default function ServicesPage() {
           </div>
 
           {/* Emergency Service Banner */}
-          <div style={{ background: "linear-gradient(135deg, #075985 0%, #0284C7 100%)", color: "#ffffff", borderRadius: "var(--radius-xl)", padding: "2.5rem", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1.5rem", border: "1px solid var(--light-border)", boxShadow: "0 16px 36px -8px rgba(56, 189, 248, 0.25)" }}>
+          <div style={{ background: "linear-gradient(135deg, #075985 0%, #0284C7 100%)", color: "#ffffff", borderRadius: "var(--radius-xl)", padding: "clamp(1.25rem, 4vw, 2.5rem)", display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "1.5rem", border: "1px solid var(--light-border)", boxShadow: "0 16px 36px -8px rgba(56, 189, 248, 0.25)" }}>
             <div style={{ maxWidth: "600px" }}>
               <div style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", color: "#E0F2FE", background: "rgba(255, 255, 255, 0.15)", padding: "0.3rem 0.75rem", borderRadius: "var(--radius-full)", fontSize: "0.8125rem", fontWeight: 700, textTransform: "uppercase", marginBottom: "0.75rem" }}>
                 <Clock size={16} />
@@ -170,10 +170,11 @@ export default function ServicesPage() {
                 Don't let mechanical trouble disrupt your morning or evening collection shift. Call or message our Baramati helpline for rapid advice and parts dispatch.
               </p>
             </div>
-            <div style={{ display: "flex", gap: "0.75rem" }}>
+            <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap", width: "100%", maxWidth: "420px" }}>
               <a
                 href={getPhoneLink(companyConfig.primaryPhone)}
                 className="btn btn-outline-white btn-lg"
+                style={{ flex: "1 1 170px", justifyContent: "center" }}
               >
                 <Phone size={18} />
                 <span>{companyConfig.primaryPhone}</span>
@@ -183,6 +184,7 @@ export default function ServicesPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-whatsapp btn-lg"
+                style={{ flex: "1 1 170px", justifyContent: "center" }}
               >
                 <MessageCircle size={20} />
                 <span>Urgent WhatsApp</span>
