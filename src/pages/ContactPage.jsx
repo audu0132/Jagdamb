@@ -152,8 +152,8 @@ export default function ContactPage() {
                   <h3 style={{ fontSize: "1.25rem", fontWeight: 700, marginBottom: "0.25rem" }}>
                     Visit Our Baramati Premises
                   </h3>
-                  <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)" }}>
-                    Located near PDCC Bank in Baramati Rural, Pune District
+                  <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", margin: 0 }}>
+                    Near PDCC Bank, Kasaba, Malegaon Road, Baramati • <span style={{ color: "var(--primary)", fontWeight: 600 }}>GPS: 18°08'41.7"N 74°33'54.0"E</span>
                   </p>
                 </div>
 

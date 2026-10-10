@@ -32,9 +32,16 @@ export const companyConfig = {
     sunday: "Sunday: 9:30 AM - 2:00 PM (Emergency breakdown support available on call)",
   },
 
+  // GPS Coordinates & Location
+  coordinates: {
+    lat: 18.144917,
+    lng: 74.565000,
+    dms: "18°08'41.7\"N 74°33'54.0\"E"
+  },
+
   // Google Maps Search / Embed URL
-  googleMapsLink: "https://maps.google.com/?q=Jagdamb+Enterprises+Baramati+Rural+Pune+Maharashtra",
-  googleMapsEmbed: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60613.62888636453!2d74.54476685!3d18.1565578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc3987f62cba397%3A0x7d0ea47f5bb73f7a!2sBaramati%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin",
+  googleMapsLink: "https://maps.google.com/?q=18.144917,74.565000",
+  googleMapsEmbed: "https://maps.google.com/maps?q=18.144917,74.565000&hl=en&z=17&output=embed",
 
   // Key Value Pillars (Honest, factual business strengths)
   valuePillars: [

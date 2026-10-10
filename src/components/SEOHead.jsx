@@ -49,6 +49,12 @@ export default function SEOHead({ title, description, schemaData }) {
         "postalCode": "413102",
         "addressCountry": "IN"
       },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": companyConfig.coordinates?.lat || 18.144917,
+        "longitude": companyConfig.coordinates?.lng || 74.565000
+      },
+      "hasMap": companyConfig.googleMapsLink,
       "areaServed": companyConfig.serviceArea,
       "priceRange": "₹₹"
     };
