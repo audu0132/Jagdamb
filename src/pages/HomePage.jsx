@@ -22,6 +22,7 @@ import TrustBadgeSection from "../components/TrustBadgeSection";
 import ProductCard from "../components/ProductCard";
 import CategoryCard from "../components/CategoryCard";
 import EnquiryForm from "../components/EnquiryForm";
+import GalleryImage from "../components/GalleryImage";
 
 export default function HomePage() {
   const featuredProducts = products.filter((p) => p.isFeatured).slice(0, 6);
@@ -373,12 +374,13 @@ export default function HomePage() {
                   flexDirection: "column"
                 }}
               >
-                <div style={{ background: "linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%)", height: "180px", display: "flex", alignItems: "center", justifyContent: "center", color: "var(--deep-blue)", padding: "1rem", textAlign: "center", position: "relative" }}>
-                  <Milk size={36} color="var(--deep-blue)" style={{ opacity: 0.9 }} />
-                  <span style={{ position: "absolute", bottom: "0.5rem", right: "0.75rem", fontSize: "0.7rem", background: "#FFFFFF", border: "1px solid var(--light-border)", color: "var(--deep-blue)", padding: "0.2rem 0.5rem", borderRadius: "4px", fontWeight: 700 }}>
-                    {item.categoryLabel}
-                  </span>
-                </div>
+                <GalleryImage
+                  src={item.image}
+                  alt={item.title}
+                  height="180px"
+                  categoryLabel={item.categoryLabel}
+                  showZoomBadge={false}
+                />
                 <div style={{ padding: "1.25rem", display: "flex", flexDirection: "column", flex: 1 }}>
                   <h4 style={{ fontSize: "1.05rem", fontWeight: 700, color: "var(--dark-blue)", marginBottom: "0.35rem" }}>{item.title}</h4>
                   <p style={{ fontSize: "0.85rem", color: "var(--text-secondary)", marginBottom: "0.75rem" }}>{item.caption}</p>
