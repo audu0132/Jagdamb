@@ -34,14 +34,14 @@ export const companyConfig = {
 
   // GPS Coordinates & Location
   coordinates: {
-    lat: 18.144917,
-    lng: 74.565000,
+    lat: 18.1449219,
+    lng: 74.5649862,
     dms: "18°08'41.7\"N 74°33'54.0\"E"
   },
 
   // Google Maps Search / Embed URL
-  googleMapsLink: "https://maps.google.com/?q=18.144917,74.565000",
-  googleMapsEmbed: "https://maps.google.com/maps?q=18.144917,74.565000&hl=en&z=17&output=embed",
+  googleMapsLink: "https://www.google.com/maps/place/18%C2%B008'41.7%22N+74%C2%B033'54.0%22E/@18.1449219,74.5624113,17z/data=!3m1!4b1!4m4!3m3!8m2!3d18.1449219!4d74.5649862?hl=en&entry=ttu",
+  googleMapsEmbed: "https://maps.google.com/maps?q=18.1449219,74.5649862&hl=en&z=17&output=embed",
 
   // Key Value Pillars (Honest, factual business strengths)
   valuePillars: [
