@@ -121,30 +121,30 @@ export const products = [
   {
     id: "prod-mm-04",
     slug: "c17m-kp-single-bucket-milking-machine",
-    name: "C17M KP Single Bucket Milking Machine",
+    name: "Jagdamb Single Bucket Milking Machine",
     category: "milking-machines",
     categoryName: "Milking Machines",
-    badge: "Krushi Power C-Series",
+    badge: "Jagdamb Series",
     isFeatured: true,
     tagline: "Heavy-duty 170 LPM belt-drive milking machine with 0.5 HP motor on square frame stand",
     shortDescription: "Rugged green frame single bucket milking machine with 170 LPM vacuum pump, 0.5 HP motor, and 25L stainless steel bucket set.",
-    fullDescription: "The C17M KP Single Bucket Milking Machine features an ultra-sturdy green tubular steel stand housing a 170 LPM high-suction vacuum pump and a reliable 0.5 HP electric motor. Coupled with a 25L food-grade stainless steel milk bucket, high-accuracy pulsator, and stainless steel teat cups with food-grade silicone liners, it delivers smooth, fast, and stress-free milking for cattle herds across Maharashtra.",
+    fullDescription: "The Jagdamb Single Bucket Milking Machine features an ultra-sturdy green tubular steel stand housing a 170 LPM high-suction vacuum pump and a reliable 0.5 HP electric motor. Coupled with a 25L food-grade stainless steel milk bucket, high-accuracy pulsator, and stainless steel teat cups with food-grade silicone liners, it delivers smooth, fast, and stress-free milking for cattle herds across Maharashtra.",
     features: [
       "170 LPM vacuum pump delivering constant 45-50 kPa operational vacuum",
       "Robust green tubular square chassis with vibration-absorbing rubber feet",
-      "0.5 HP motor choices: Krushi Power, Crompton Greaves & Godrej, Marathon, Copper",
+      "0.5 HP motor choices: Jagdamb Power, Crompton Greaves & Godrej, Marathon, Copper",
       "Complete 25 Ltr AISI 304 food-grade stainless steel bucket with silicone lid seal",
       "50 Ft vacuum pipe for flexible reach across cattle stalls without moving the pump",
       "Balanced 60/40 pulsation ratio for gentle teat massage and complete milk extraction"
     ],
     specifications: [
-      { label: "Model", value: "C17M KP Single Bucket" },
+      { label: "Model", value: "Jagdamb Single Bucket" },
       { label: "Vacuum Pump", value: "170 LPM Rotary Vacuum Pump" },
-      { label: "Motor Options", value: "0.5 HP (KP, CG & Godrej, Marathon, Copper Winding)" },
+      { label: "Motor Options", value: "0.5 HP (Standard, CG & Godrej, Marathon, Copper Winding)" },
       { label: "Bucket", value: "25 Ltr Stainless Steel AISI 304" },
       { label: "Vacuum Pipe", value: "50 Ft Heavy Rubber Vacuum Pipe" },
       { label: "Milking Rate", value: "8 - 12 cows or buffaloes per hour" },
-      { label: "Price", value: "₹14,750 (KP Motor) | Up to ₹16,600 (Copper Motor)" }
+      { label: "Price", value: "₹14,750 (Standard Motor) | Up to ₹16,600 (Copper Motor)" }
     ],
     applications: [
       "Small to medium dairy farms (5 to 25 cattle)",
@@ -160,14 +160,14 @@ export const products = [
   {
     id: "prod-mm-05",
     slug: "c17v-kp-single-bucket-milking-machine",
-    name: "C17V KP Single Bucket Milking Machine",
+    name: "Jagdamb Oil-Bath Single Bucket Milking Machine",
     category: "milking-machines",
     categoryName: "Milking Machines",
     badge: "Oil-Bath Pump Model",
     isFeatured: true,
     tagline: "Square oil-bath vacuum pump milking machine with heavy frame stand and 25L SS bucket",
     shortDescription: "Commercial-grade single bucket machine equipped with square oil-bath vacuum pump and 0.5 HP motor for long duty cycles.",
-    fullDescription: "The C17V KP model is engineered for dairy farmers requiring extended daily run times. Its square oil-bath vacuum pump provides exceptional internal lubrication and thermal dissipation, keeping operating temperatures low during back-to-back milking. Includes heavy green square stand, 0.5 HP motor, 25L stainless steel bucket, and 50ft vacuum pipe.",
+    fullDescription: "The Jagdamb Oil-Bath Single Bucket model is engineered for dairy farmers requiring extended daily run times. Its square oil-bath vacuum pump provides exceptional internal lubrication and thermal dissipation, keeping operating temperatures low during back-to-back milking. Includes heavy green square stand, 0.5 HP motor, 25L stainless steel bucket, and 50ft vacuum pipe.",
     features: [
       "Square oil-bath vacuum pump engineered for extended continuous operation",
       "Heavy-duty square frame stand with anti-vibration rubber base pads",
@@ -177,12 +177,12 @@ export const products = [
       "50 feet vacuum line allows distant stall milking while pump stays outside shed"
     ],
     specifications: [
-      { label: "Model", value: "C17V KP Single Bucket" },
+      { label: "Model", value: "Jagdamb Oil-Bath Single Bucket" },
       { label: "Pump Type", value: "170 LPM Square Oil-Bath Vacuum Pump" },
       { label: "Motor", value: "0.5 HP Single Phase 220V Motor Options" },
       { label: "Bucket", value: "25 Ltr Stainless Steel Container" },
       { label: "Vacuum Pipe", value: "50 Ft Heavy Duty Vacuum Pipe" },
-      { label: "Price", value: "₹14,750 (KP Motor) | Up to ₹16,600 (Copper Motor)" }
+      { label: "Price", value: "₹14,750 (Standard Motor) | Up to ₹16,600 (Copper Motor)" }
     ],
     applications: [
       "Medium dairy farms (10 to 30 cows/buffaloes)",
