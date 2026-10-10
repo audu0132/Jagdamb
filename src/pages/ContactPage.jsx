@@ -5,7 +5,8 @@ import {
   MessageCircle, 
   Clock, 
   Navigation, 
-  ExternalLink 
+  ExternalLink,
+  Mail 
 } from "lucide-react";
 import { companyConfig } from "../data/company";
 import { getWhatsAppLink, getPhoneLink } from "../utils/whatsapp";
@@ -93,6 +94,25 @@ export default function ContactPage() {
               >
                 <MessageCircle size={15} />
                 <span>Chat on WhatsApp</span>
+              </a>
+            </div>
+
+            {/* Email */}
+            <div style={{ background: "var(--surface)", border: "1px solid var(--border)", borderRadius: "var(--radius-xl)", padding: "1.75rem", display: "flex", flexDirection: "column" }}>
+              <div style={{ width: "48px", height: "48px", borderRadius: "var(--radius-md)", background: "var(--primary-light)", color: "var(--primary)", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "1.25rem" }}>
+                <Mail size={24} />
+              </div>
+              <h3 style={{ fontSize: "1.15rem", fontWeight: 700, marginBottom: "0.5rem" }}>Email Inquiries</h3>
+              <p style={{ fontSize: "0.875rem", color: "var(--text-secondary)", lineHeight: "1.6", marginBottom: "1.25rem", flex: 1 }}>
+                Send formal quotation requests, tender inquiries, or business correspondence.
+              </p>
+              <a
+                href={`mailto:${companyConfig.email}`}
+                className="btn btn-outline btn-sm"
+                style={{ width: "100%", wordBreak: "break-all", fontSize: "0.825rem" }}
+              >
+                <Mail size={14} />
+                <span>{companyConfig.email}</span>
               </a>
             </div>
 

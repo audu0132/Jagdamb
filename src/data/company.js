@@ -18,8 +18,8 @@ export const companyConfig = {
   secondaryPhone: "+91 94207 71886",
 
   // Email
-  email: "contact@jagdambenterprises.com",
-  salesEmail: "sales@jagdambenterprises.com",
+  email: "jagdambenterprices@gmail.com",
+  salesEmail: "jagdambenterprices@gmail.com",
 
   // Physical Location & Region
   location: "Shop No 16, Vithal Plaza Apartment, Kasaba, Malegaon Road, Baramati",
