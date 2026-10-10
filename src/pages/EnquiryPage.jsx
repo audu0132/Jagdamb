@@ -82,7 +82,7 @@ export default function EnquiryPage() {
                   <span>Prefer WhatsApp?</span>
                 </div>
 
-                <h3 style={{ fontSize: "1.35rem", fontWeight: 700, marginBottom: "0.5rem" }}>
+                <h3 style={{ fontSize: "1.35rem", fontWeight: 700, color: "#ffffff", marginBottom: "0.5rem" }}>
                   Instant WhatsApp Discussion
                 </h3>
 

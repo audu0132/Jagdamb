@@ -163,7 +163,7 @@ export default function ServicesPage() {
                 <Clock size={16} />
                 <span>Urgent Breakdown Support</span>
               </div>
-              <h3 style={{ fontSize: "1.5rem", fontWeight: 700, marginBottom: "0.5rem" }}>
+              <h3 style={{ fontSize: "1.5rem", fontWeight: 700, color: "#ffffff", marginBottom: "0.5rem" }}>
                 Facing Milking Machine or Analyser Failure?
               </h3>
               <p style={{ fontSize: "0.9375rem", color: "#F0F9FF", lineHeight: "1.55" }}>
